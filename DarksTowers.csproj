@@ -9,9 +9,6 @@
         <Optimize>False</Optimize>
         <DebugType>embedded</DebugType>
     </PropertyGroup>
-    <ItemGroup>
-      <Folder Include="Towers\" />
-    </ItemGroup>
 
     <Import Project="..\btd6.targets" />
 </Project>
