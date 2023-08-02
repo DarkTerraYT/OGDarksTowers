@@ -73,5 +73,14 @@ namespace DarksTowers.Displays.Proj
                 Set2DTexture(node, Name);
             }
         }
+        public class BloonDiscintergrationDart : ModDisplay
+        {
+            public override string BaseDisplay => Generic2dDisplay;
+
+            public override void ModifyDisplayNode(UnityDisplayNode node)
+            {
+                Set2DTexture(node, Name);
+            }
+        }
     }
 }

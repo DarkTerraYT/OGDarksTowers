@@ -5,6 +5,7 @@ using Il2CppAssets.Scripts.Models.Towers;
 using Il2CppAssets.Scripts.Models.Towers.Behaviors.Abilities;
 using Il2CppAssets.Scripts.Models.Towers.Behaviors.Abilities.Behaviors;
 using Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack;
+using Il2CppAssets.Scripts.Models.Towers.Projectiles;
 using Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors;
 using Il2CppAssets.Scripts.Simulation.Towers.Behaviors.Abilities;
 using Il2CppAssets.Scripts.Utils;
@@ -140,12 +141,21 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Middle
         {
             var attackModel = towerModel.GetAttackModel();
             var proj = attackModel.weapons[0].projectile;
-            var dmgModel = proj.GetDamageModel();
 
             foreach (var sProj in towerModel.GetWeapons().Select(weaponModel => weaponModel.projectile))
             {
                 sProj.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", 1, 9, false, false));
             }
+
+            var abilityModel = towerModel.GetAbility();
+            abilityModel.resetCooldownOnTierUpgrade = true;
+            abilityModel.icon = GetSpriteReference(Icon);
+            var abilityProj = abilityModel.GetDescendant<ProjectileModel>();
+            abilityProj.ApplyDisplay<BloonDiscintergrationDart>();
+            abilityProj.pierce = proj.pierce;
+            var abilityDamageModel = abilityProj.GetDamageModel();
+            abilityDamageModel.damage += 15;
+            abilityProj.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", 1, 65, false, false));
         }
     }
 }
