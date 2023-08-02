@@ -100,9 +100,8 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Middle
         {
             var attackModel = towerModel.GetAttackModel();
             var proj = attackModel.weapons[0].projectile;
-            proj.ApplyDisplay<FieryPlasmaBall>();
             var dmgModel = proj.GetDamageModel();
-            dmgModel.damage += 18;
+            dmgModel.damage += 3;
 
             foreach (var sPorj in towerModel.GetWeapons().Select(weaponModel => weaponModel.projectile))
             {
@@ -135,15 +134,13 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Middle
 
         public override int Cost => 82650;
 
-        public override string Description => "Increases Damage by 22. Also Increases Moab Damage Even More.";
+        public override string Description => "Ability: The Plasma Monkey Uses Most of His Energy to Create The Most Powerful Darts of All Time.";
 
         public override void ApplyUpgrade(TowerModel towerModel)
         {
             var attackModel = towerModel.GetAttackModel();
             var proj = attackModel.weapons[0].projectile;
-            proj.ApplyDisplay<GodlyPlasmaBall>();
             var dmgModel = proj.GetDamageModel();
-            dmgModel.damage += 22;
 
             foreach (var sProj in towerModel.GetWeapons().Select(weaponModel => weaponModel.projectile))
             {
