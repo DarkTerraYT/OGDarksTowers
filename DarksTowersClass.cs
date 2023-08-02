@@ -2,7 +2,7 @@ using MelonLoader;
 using BTD_Mod_Helper;
 using DarksTowers;
 
-[assembly: MelonInfo(typeof(DarksTowers.DarksTowersClass), ModHelperData.Name, ModHelperData.Version, ModHelperData.RepoOwner)]
+[assembly: MelonInfo(typeof(DarksTowersClass), ModHelperData.Name, ModHelperData.Version, ModHelperData.Author)]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 
 namespace DarksTowers;

@@ -1,12 +1,19 @@
 ﻿using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
+using Il2Cpp;
 using Il2CppAssets.Scripts.Models.Towers;
+using Il2CppAssets.Scripts.Models.Towers.Behaviors.Abilities;
+using Il2CppAssets.Scripts.Models.Towers.Behaviors.Abilities.Behaviors;
+using Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack;
 using Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors;
+using Il2CppAssets.Scripts.Simulation.Towers.Behaviors.Abilities;
+using Il2CppAssets.Scripts.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 using static DarksTowers.Displays.Proj.Displays;
 
 namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Middle
@@ -73,21 +80,21 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Middle
 
             foreach (var sproj in towerModel.GetWeapons().Select(weaponModel => weaponModel.projectile))
             {
-                sproj.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab1", "Moab",
+                sproj.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab",
                     1, 15, false, false));
             }
         }
     }
 
-    internal class FieryPlasmaBalls2 : ModUpgrade<DarksTowers.PlasmaMonkey>
+    internal class MoabIncineration : ModUpgrade<DarksTowers.PlasmaMonkey>
     {
         public override int Path => MIDDLE;
 
         public override int Tier => 4;
 
-        public override int Cost => 7560;
+        public override int Cost => 21350;
 
-        public override string Description => "Increases Damage by 18. Increases Moab Damage";
+        public override string Description => "Ability: The Plasma Monkey Gets New Darts Designed to Incinitgrate MOABS. Also adds increases damage and MOAB damage";
 
         public override void ApplyUpgrade(TowerModel towerModel)
         {
@@ -101,16 +108,32 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Middle
             {
                 sPorj.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", 1, 5, false, false));
             }
+            var abilityModel = new AbilityModel("moab-incineration-ability", "Moab Incineration", "Increases Moab Greatly Effectively Incinerating Them.", 1, 0, GetSpriteReference(Icon),
+                52f, null, false, false, null, 0, 0, 999999, false, false);
+            var abilityAttackModel = new ActivateAttackModel("moab-incineration-avtivate-attack-model", 1f, true, new Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppReferenceArray<AttackModel>(1), false, true, false, false, false);
+            abilityModel.AddBehavior(abilityAttackModel);
+
+            var attackModleAbility = abilityAttackModel.attacks[0];
+            var weaponModel = attackModleAbility.weapons[0];
+            var projectileModel = weaponModel.projectile;
+
+            attackModleAbility.range = towerModel.range;
+            projectileModel.ApplyDisplay<MoabIncinerationDart>();
+            var abilityDamageModel = projectileModel.GetDamageModel();
+            abilityDamageModel.damage = dmgModel.damage;
+            abilityDamageModel.immuneBloonProperties = dmgModel.immuneBloonProperties;
+            projectileModel.pierce = proj.pierce;
+            projectileModel.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", 1, 40, false, false));
         }
     }
 
-    internal class GodlyPlasmaBalls2 : ModUpgrade<DarksTowers.PlasmaMonkey>
+    internal class MoabDiscintergration : ModUpgrade<DarksTowers.PlasmaMonkey>
     {
         public override int Path => MIDDLE;
 
         public override int Tier => 5;
 
-        public override int Cost => 18750;
+        public override int Cost => 82650;
 
         public override string Description => "Increases Damage by 22. Also Increases Moab Damage Even More.";
 

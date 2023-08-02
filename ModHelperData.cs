@@ -10,4 +10,5 @@ public static class ModHelperData
 
     public const string RepoOwner = "DarkTerraYT"; // TODO add your github username hero, also in the download url in README.md
     public const string RepoName = "DarksTowers"; // TODO add your repo name here, also in the download url in README.md
+    public const string Author = "DarkTerra";
 }

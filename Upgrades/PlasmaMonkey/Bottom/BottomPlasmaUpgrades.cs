@@ -79,11 +79,12 @@ namespace DarksTowers.Upgrades.PlasmaMonkey.Bottom
             public override int Path => BOTTOM;
             public override int Tier => 5;
             public override int Cost => 51305;
-            public override string Description => "Improves the Blasters to the State of the art Blasters Allowing Gloable Range and INSANE Peirce and Increasing Damage";
+            public override string Description => "Improves the Blasters to the State of the art Blasters Allowing Gloable Range, INSANE Peirce and Increasing Damage";
 
             public override void ApplyUpgrade(TowerModel towerModel)
             {
                 towerModel.range *= 15;
+                towerModel.isGlobalRange = true;
                 var proj = towerModel.GetAttackModel().weapons[0].projectile;
                 proj.pierce += 50;
                 proj.GetDamageModel().damage += 15;

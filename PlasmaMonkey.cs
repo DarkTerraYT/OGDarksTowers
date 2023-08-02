@@ -49,6 +49,6 @@ namespace DarksTowers
         }
 
         public override bool IsValidCrosspath(int[] tiers) =>
-          ModHelper.HasMod("UltimateCrosspathing") || base.IsValidCrosspath(tiers);
+          ModHelper.HasMod("UltimateCrosspathing") ? true : base.IsValidCrosspath(tiers);
     }
 }

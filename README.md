@@ -8,6 +8,6 @@
 Adds some custom towers to add to your stratergies. 
 
 Join the discord to give suggestions or ways I could balance the mod.
-Invite Link: 
+Invite Link: https://discord.gg/xegnVEBRuE
 
 [![Requires BTD6 Mod Helper](https://raw.githubusercontent.com/gurrenm3/BTD-Mod-Helper/master/banner.png)](https://github.com/gurrenm3/BTD-Mod-Helper#readme)
