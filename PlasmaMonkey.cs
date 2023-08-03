@@ -22,7 +22,7 @@ namespace DarksTowers
 
         public override int TopPathUpgrades => 5;
 
-        public override int MiddlePathUpgrades => 5;
+        public override int MiddlePathUpgrades => 4;
 
         public override int BottomPathUpgrades => 5;
 

@@ -1,20 +1,13 @@
 ﻿using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
-using Il2Cpp;
 using Il2CppAssets.Scripts.Models.Towers;
 using Il2CppAssets.Scripts.Models.Towers.Behaviors.Abilities;
 using Il2CppAssets.Scripts.Models.Towers.Behaviors.Abilities.Behaviors;
 using Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack;
 using Il2CppAssets.Scripts.Models.Towers.Projectiles;
 using Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors;
-using Il2CppAssets.Scripts.Simulation.Towers.Behaviors.Abilities;
-using Il2CppAssets.Scripts.Utils;
-using System;
-using System.Collections.Generic;
+using Il2CppAssets.Scripts.Unity;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
 using static DarksTowers.Displays.Proj.Displays;
 
 namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Middle
@@ -32,6 +25,7 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Middle
         public override void ApplyUpgrade(TowerModel towerModel)
         {
             towerModel.range += 15;
+            towerModel.GetAttackModel().range += 15;
         }
     }
 
@@ -58,7 +52,7 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Middle
             }
 
             towerModel.range += 20;
-
+            towerModel.GetAttackModel().range +=20;
         }
     }
 
@@ -109,11 +103,12 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Middle
                 sPorj.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", 1, 5, false, false));
             }
             var abilityModel = new AbilityModel("moab-incineration-ability", "Moab Incineration", "Increases Moab Greatly Effectively Incinerating Them.", 1, 0, GetSpriteReference(Icon),
-                52f, null, false, false, null, 0, 0, 999999, false, false);
+                52f, null, false, false, null, 0, 0, 999999, true, false);
+            towerModel.AddBehavior(abilityModel);
             var abilityAttackModel = new ActivateAttackModel("moab-incineration-avtivate-attack-model", 1f, true, new Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppReferenceArray<AttackModel>(1), false, true, false, false, false);
             abilityModel.AddBehavior(abilityAttackModel);
 
-            var attackModleAbility = abilityAttackModel.attacks[0];
+            var attackModleAbility = abilityAttackModel.attacks[0] = Game.instance.model.GetTower(TowerType.DartMonkey).GetAttackModel().Duplicate();
             var weaponModel = attackModleAbility.weapons[0];
             var projectileModel = weaponModel.projectile;
 
@@ -127,13 +122,15 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Middle
         }
     }
 
-    internal class MoabDiscintergration : ModUpgrade<DarksTowers.PlasmaMonkey>
+    /* internal class MoabDiscintergration : ModUpgrade<DarksTowers.PlasmaMonkey>
     {
         public override int Path => MIDDLE;
 
         public override int Tier => 5;
 
         public override int Cost => 82650;
+
+        public override int Priority => -3;
 
         public override string Description => "Ability: The Plasma Monkey Uses Most of His Energy to Create The Most Powerful Darts of All Time.";
 
@@ -148,14 +145,13 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Middle
             }
 
             var abilityModel = towerModel.GetAbility();
-            abilityModel.resetCooldownOnTierUpgrade = true;
             abilityModel.icon = GetSpriteReference(Icon);
-            var abilityProj = abilityModel.GetDescendant<ProjectileModel>();
-            abilityProj.ApplyDisplay<BloonDiscintergrationDart>();
-            abilityProj.pierce = proj.pierce;
-            var abilityDamageModel = abilityProj.GetDamageModel();
+            var projectileModel = abilityModel.GetDescendant<ProjectileModel>();
+            projectileModel.ApplyDisplay<BloonDiscintergrationDart>();
+            projectileModel.pierce = proj.pierce;
+            var abilityDamageModel = projectileModel.GetDamageModel();
             abilityDamageModel.damage += 15;
-            abilityProj.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", 1, 65, false, false));
+            projectileModel.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", 1, 65, false, false));
         }
-    }
+    } */
 }
