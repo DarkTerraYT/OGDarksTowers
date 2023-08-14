@@ -3,7 +3,7 @@ using BTD_Mod_Helper.Extensions;
 using Il2CppAssets.Scripts.Models.Towers;
 using Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors;
 using System.Linq;
-using static DarksTowers.Displays.Proj.Displays;
+using static DarksTowers.Displays.Proj.ProjectileDisplays;
 
 namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Top
 {

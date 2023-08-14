@@ -3,7 +3,7 @@ using Il2CppAssets.Scripts.Unity.Display;
 
 namespace DarksTowers.Displays.Proj
 {
-    internal class Displays : ModDisplay
+    internal class ProjectileDisplays : ModDisplay
     {
         public class PlasmaDart : ModDisplay
         {
@@ -110,6 +110,33 @@ namespace DarksTowers.Displays.Proj
             }
         }
         public class VoidBlast : ModDisplay
+        {
+            public override string BaseDisplay => Generic2dDisplay;
+
+            public override void ModifyDisplayNode(UnityDisplayNode node)
+            {
+                Set2DTexture(node, Name);
+            }
+        }
+        public class HeatBlast : ModDisplay
+        {
+            public override string BaseDisplay => Generic2dDisplay;
+
+            public override void ModifyDisplayNode(UnityDisplayNode node)
+            {
+                Set2DTexture(node, Name);
+            }
+        }
+        public class FireBlast : ModDisplay
+        {
+            public override string BaseDisplay => Generic2dDisplay;
+
+            public override void ModifyDisplayNode(UnityDisplayNode node)
+            {
+                Set2DTexture(node, Name);
+            }
+        }
+        public class LavaBlast : ModDisplay
         {
             public override string BaseDisplay => Generic2dDisplay;
 

@@ -8,7 +8,7 @@ using Il2CppAssets.Scripts.Models.Towers.Projectiles;
 using Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors;
 using Il2CppAssets.Scripts.Unity;
 using System.Linq;
-using static DarksTowers.Displays.Proj.Displays;
+using static DarksTowers.Displays.Proj.ProjectileDisplays;
 
 namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Middle
 {

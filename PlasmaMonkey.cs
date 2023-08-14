@@ -5,7 +5,7 @@ using BTD_Mod_Helper.Api.Towers;
 using Il2CppAssets.Scripts.Models.TowerSets;
 using Il2CppAssets.Scripts.Models.Towers;
 using BTD_Mod_Helper.Extensions;
-using static DarksTowers.Displays.Proj.Displays;
+using static DarksTowers.Displays.Proj.ProjectileDisplays;
 using Il2CppAssets.Scripts.Models;
 using Il2Cpp;
 using DarksTowers.Displays.PlasmaMonkey;

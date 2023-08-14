@@ -2,7 +2,7 @@
 using BTD_Mod_Helper.Extensions;
 using DarksTowers.Displays.MoneyofLight;
 using Il2CppAssets.Scripts.Models.Towers;
-using static DarksTowers.Displays.Proj.Displays;
+using static DarksTowers.Displays.Proj.ProjectileDisplays;
 
 namespace DarksTowers.Upgrades.LightMonkey.Top
 {
