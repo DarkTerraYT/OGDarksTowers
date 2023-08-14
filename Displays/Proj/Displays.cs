@@ -82,5 +82,41 @@ namespace DarksTowers.Displays.Proj
                 Set2DTexture(node, Name);
             }
         }
+        public class LightBlast : ModDisplay
+        {
+            public override string BaseDisplay => Generic2dDisplay;
+
+            public override void ModifyDisplayNode(UnityDisplayNode node)
+            {
+                Set2DTexture(node, Name);
+            }
+        }
+        public class VoidBlastExtraLight : ModDisplay
+        {
+            public override string BaseDisplay => Generic2dDisplay;
+
+            public override void ModifyDisplayNode(UnityDisplayNode node)
+            {
+                Set2DTexture(node, Name);
+            }
+        }
+        public class VoidBlastLight : ModDisplay
+        {
+            public override string BaseDisplay => Generic2dDisplay;
+
+            public override void ModifyDisplayNode(UnityDisplayNode node)
+            {
+                Set2DTexture(node, Name);
+            }
+        }
+        public class VoidBlast : ModDisplay
+        {
+            public override string BaseDisplay => Generic2dDisplay;
+
+            public override void ModifyDisplayNode(UnityDisplayNode node)
+            {
+                Set2DTexture(node, Name);
+            }
+        }
     }
 }

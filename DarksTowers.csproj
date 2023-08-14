@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
         <RootNamespace>DarksTowers</RootNamespace>
@@ -9,6 +9,9 @@
         <Optimize>False</Optimize>
         <DebugType>embedded</DebugType>
     </PropertyGroup>
+    <ItemGroup>
+      <Folder Include="Upgrades\LightMonkey\Middle\" />
+    </ItemGroup>
 
     <Import Project="..\btd6.targets" />
 </Project>

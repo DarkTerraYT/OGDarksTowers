@@ -8,46 +8,43 @@ using BTD_Mod_Helper.Extensions;
 using static DarksTowers.Displays.Proj.Displays;
 using Il2CppAssets.Scripts.Models;
 using Il2Cpp;
-using DarksTowers.Displays.PlasmaMonkey;
 
 namespace DarksTowers
 {
-    internal class PlasmaMonkey : ModTower
+    internal class MonkeyofLight : ModTower
     {
 
         public override TowerSet TowerSet => TowerSet.Magic;
 
-        public override string BaseTower => TowerType.DartMonkey;
+        public override string BaseTower => TowerType.WizardMonkey;
 
-        public override int Cost => 4250;
+        public override int Cost => 1065;
 
         public override int TopPathUpgrades => 5;
 
-        public override int MiddlePathUpgrades => 4;
+        public override int MiddlePathUpgrades => 0;
 
-        public override int BottomPathUpgrades => 5;
+        public override int BottomPathUpgrades => 0;
 
-        public override string Description => "It's a Monkey but Plasma, Shoots Plasma Darts";
+        public override string Description => "This Monkey learned how to capture light and used it to their advantage. One day though, this monkey had an accident and turned into a monkey made purely of light.";
 
-        public override string Icon => "PlasmaMonkey-Portrait";
+        public override string Icon => "LightMonkey-Portrait";
 
         public override void ModifyBaseTowerModel(TowerModel towerModel)
         {
-            towerModel.ApplyDisplay<PlasmaMonkeyDisplay>();
-            towerModel.range += 15;
+            towerModel.range += 10;
             var attackModle = towerModel.GetAttackModel();
-            attackModle.range += 15;
-
+            attackModle.range += 10;
+            towerModel.ApplyDisplay<Displays.MoneyofLight.MonkeyofLightDisplay>();
             var projectile = attackModle.weapons[0].projectile;
-            projectile.ApplyDisplay<PlasmaDart>();
-            projectile.pierce += 7;
+            projectile.ApplyDisplay<LightBlast>();
             projectile.GetDamageModel().damage += 2;
             foreach (var weaponModel in towerModel.GetWeapons())
             {
-                weaponModel.projectile.GetDamageModel().immuneBloonProperties = BloonProperties.None;
+                weaponModel.rate *= 0.65f;
+                weaponModel.projectile.GetDamageModel().immuneBloonProperties = BloonProperties.Lead;
                 weaponModel.projectile.GetDamageModel().immuneBloonProperties = BloonProperties.Purple;
             }
-            projectile.CanHitCamo();
         }
 
         public override bool IsValidCrosspath(int[] tiers) =>
