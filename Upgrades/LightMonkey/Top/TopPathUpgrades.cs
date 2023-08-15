@@ -53,6 +53,7 @@ namespace DarksTowers.Upgrades.LightMonkey.Top
         public override void ApplyUpgrade(TowerModel towerModel)
         {
             towerModel.range += 10;
+            towerModel.ApplyDisplay<MonkeyofLight300Display>();
             var attackModel = towerModel.GetAttackModel();
             attackModel.range += 10;
             var proj = attackModel.weapons[0].projectile;
@@ -73,6 +74,7 @@ namespace DarksTowers.Upgrades.LightMonkey.Top
         public override void ApplyUpgrade(TowerModel towerModel)
         {
             towerModel.range += 10;
+            towerModel.ApplyDisplay<MonkeyofLight400Display>();
             var attackModel = towerModel.GetAttackModel();
             attackModel.range += 10;
             var proj = attackModel.weapons[0].projectile;

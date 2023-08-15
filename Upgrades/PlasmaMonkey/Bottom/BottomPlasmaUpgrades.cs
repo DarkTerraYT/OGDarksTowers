@@ -1,5 +1,6 @@
 ﻿using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
+using DarksTowers.Displays.PlasmaMonkey;
 using Il2CppAssets.Scripts.Models.Towers;
 
 namespace DarksTowers.Upgrades.PlasmaMonkey.Bottom
@@ -68,6 +69,7 @@ namespace DarksTowers.Upgrades.PlasmaMonkey.Bottom
 
             public override void ApplyUpgrade(TowerModel towerModel)
             {
+                towerModel.ApplyDisplay<PlasmaMonkey004Display>();
                 towerModel.range += 50;
                 towerModel.GetAttackModel().range += 50;
                 var proj = towerModel.GetAttackModel().weapons[0].projectile;
@@ -84,6 +86,7 @@ namespace DarksTowers.Upgrades.PlasmaMonkey.Bottom
 
             public override void ApplyUpgrade(TowerModel towerModel)
             {
+                towerModel.ApplyDisplay<PlasmaMonkey005Display>();
                 towerModel.range *= 15;
                 towerModel.GetAttackModel().range *= 5;
                 towerModel.isGlobalRange = true;

@@ -28,7 +28,8 @@ namespace DarksTowers
 
         public override string Description => "This Monkey learned how to capture light and used it to their advantage. One day though, this monkey had an accident and turned into a monkey made purely of light.";
 
-        public override string Icon => "LightMonkey-Portrait";
+        public override string Icon => "LightofMonkey-Portrait";
+
 
         public override void ModifyBaseTowerModel(TowerModel towerModel)
         {

@@ -1,5 +1,6 @@
 ﻿using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
+using DarksTowers.Displays.MoneyofLight;
 using Il2CppAssets.Scripts.Models.Towers;
 using static DarksTowers.Displays.Proj.ProjectileDisplays;
 
@@ -50,6 +51,7 @@ namespace DarksTowers.Upgrades.LightMonkey.Middle
 
         public override void ApplyUpgrade(TowerModel towerModel)
         {
+            towerModel.ApplyDisplay<MonkeyofLight030Display>();
             var weaponModel = towerModel.GetWeapon();
             var proj = weaponModel.projectile;
             var damageModel = proj.GetDamageModel();
@@ -69,6 +71,7 @@ namespace DarksTowers.Upgrades.LightMonkey.Middle
         public override string Description => "The Light Blasts Are Being Shot so Fast it's Making it so Hot; Practically Fire!";
         public override void ApplyUpgrade(TowerModel towerModel)
         {
+            towerModel.ApplyDisplay<MonkeyofLight040Display>();
             var weaponModel = towerModel.GetWeapon();
             var proj = weaponModel.projectile;
             var damageModel = proj.GetDamageModel();
@@ -88,6 +91,7 @@ namespace DarksTowers.Upgrades.LightMonkey.Middle
         public override string Description => "This May Sound Weird But The Monkey of Light Now Shoots Lava?";
         public override void ApplyUpgrade(TowerModel towerModel)
         {
+            towerModel.ApplyDisplay<MonkeyofLight050Display>();
             var weaponModel = towerModel.GetWeapon();
             var proj = weaponModel.projectile;
             var damageModel = proj.GetDamageModel();

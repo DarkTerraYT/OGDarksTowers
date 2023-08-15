@@ -1,5 +1,6 @@
 ﻿using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
+using DarksTowers.Displays.PlasmaMonkey;
 using Il2CppAssets.Scripts.Models.Towers;
 using Il2CppAssets.Scripts.Models.Towers.Behaviors.Abilities;
 using Il2CppAssets.Scripts.Models.Towers.Behaviors.Abilities.Behaviors;
@@ -69,7 +70,7 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Middle
 
         public override void ApplyUpgrade(TowerModel towerModel)
         {
-
+            towerModel.ApplyDisplay<PlasmaMonkey030Display>();
             var proj = towerModel.GetAttackModel().weapons[0].projectile;
             proj.GetDamageModel().damage += 5;
 
@@ -93,6 +94,7 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Middle
 
         public override void ApplyUpgrade(TowerModel towerModel)
         {
+            towerModel.ApplyDisplay<PlasmaMonkey040Display>();
             var attackModel = towerModel.GetAttackModel();
             var proj = attackModel.weapons[0].projectile;
             var dmgModel = proj.GetDamageModel();
@@ -136,6 +138,7 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Middle
 
         public override void ApplyUpgrade(TowerModel towerModel)
         {
+            towerModel.AppyDisplay<PlasmaMonkey050Display>();
             var attackModel = towerModel.GetAttackModel();
             var proj = attackModel.weapons[0].projectile;
 

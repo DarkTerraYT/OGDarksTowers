@@ -1,5 +1,6 @@
 ﻿using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
+using DarksTowers.Displays.PlasmaMonkey;
 using Il2CppAssets.Scripts.Models.Towers;
 using Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors;
 using System.Linq;
@@ -19,6 +20,7 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Top
 
         public override void ApplyUpgrade(TowerModel towerModel)
         {
+            towerModel.ApplyDisplay<PlasmaMonkey100Display>();
             var attackModel = towerModel.GetAttackModel();
             var proj = attackModel.weapons[0].projectile;
             proj.ApplyDisplay<HotterPlasmaDart>();
@@ -40,6 +42,7 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Top
 
         public override void ApplyUpgrade(TowerModel towerModel)
         {
+            towerModel.ApplyDisplay<PlasmaMonkey200Display>();
             var attackModel = towerModel.GetAttackModel();
             var proj = attackModel.weapons[0].projectile;
             proj.ApplyDisplay<FieryPlasmaDart>();
@@ -61,6 +64,7 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Top
 
         public override void ApplyUpgrade(TowerModel towerModel)
         {
+            towerModel.ApplyDisplay<PlasmaMonkey300Display>();
             var attackModel = towerModel.GetAttackModel();
             var proj = attackModel.weapons[0].projectile;
             proj.ApplyDisplay<PlasmaBall>();
@@ -81,6 +85,7 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Top
 
         public override void ApplyUpgrade(TowerModel towerModel)
         {
+            towerModel.ApplyDisplay<PlasmaMonkey400Display>();
             var attackModel = towerModel.GetAttackModel();
             var proj = attackModel.weapons[0].projectile;
             proj.ApplyDisplay<FieryPlasmaBall>();
@@ -106,6 +111,7 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Top
 
         public override void ApplyUpgrade(TowerModel towerModel)
         {
+            towerModel.ApplyDisplay<PlasmaMonkey500Display>();
             var attackModel = towerModel.GetAttackModel();
             var proj = attackModel.weapons[0].projectile;
             proj.ApplyDisplay<GodlyPlasmaBall>();
