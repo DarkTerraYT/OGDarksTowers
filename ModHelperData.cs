@@ -2,8 +2,8 @@ namespace DarksTowers;
 
 public static class ModHelperData
 {
-    public const string WorksOnVersion = "38.1";
-    public const string Version = "1.0.1";
+    public const string WorksOnVersion = "38";
+    public const string Version = "2.0.0 BETA";
     public const string Name = "DarksTowers";
 
     public const string Description = "Adds custom towers to the game. Currently only has the plasma monkey.";

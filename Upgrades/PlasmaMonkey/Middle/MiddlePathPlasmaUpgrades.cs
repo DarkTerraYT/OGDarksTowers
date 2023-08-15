@@ -124,7 +124,7 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Middle
         }
     }
 
-    /* internal class MoabDiscintergration : ModUpgrade<DarksTowers.PlasmaMonkey>
+    internal class BloonDiscintergration : ModUpgrade<DarksTowers.PlasmaMonkey>
     {
         public override int Path => MIDDLE;
 
@@ -132,29 +132,18 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Middle
 
         public override int Cost => 82650;
 
-        public override int Priority => -3;
-
-        public override string Description => "Ability: The Plasma Monkey Uses Most of His Energy to Create The Most Powerful Darts of All Time.";
+        public override string Description => "The Plasma Monkey Now Does INSANE Damage!";
 
         public override void ApplyUpgrade(TowerModel towerModel)
         {
-            towerModel.AppyDisplay<PlasmaMonkey050Display>();
+            towerModel.ApplyDisplay<PlasmaMonkey050Display>();
             var attackModel = towerModel.GetAttackModel();
             var proj = attackModel.weapons[0].projectile;
-
+            proj.GetDamageModel().damage += 30;
             foreach (var sProj in towerModel.GetWeapons().Select(weaponModel => weaponModel.projectile))
             {
-                sProj.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", 1, 9, false, false));
+                sProj.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", 1, 32, false, false));
             }
-
-            var abilityModel = towerModel.GetAbility();
-            abilityModel.icon = GetSpriteReference(Icon);
-            var projectileModel = abilityModel.GetDescendant<ProjectileModel>();
-            projectileModel.ApplyDisplay<BloonDiscintergrationDart>();
-            projectileModel.pierce = proj.pierce;
-            var abilityDamageModel = projectileModel.GetDamageModel();
-            abilityDamageModel.damage += 15;
-            projectileModel.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", 1, 65, false, false));
         }
-    } */
+    }
 }

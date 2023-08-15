@@ -44,7 +44,6 @@ namespace DarksTowers
             {
                 weaponModel.rate *= 0.65f;
                 weaponModel.projectile.GetDamageModel().immuneBloonProperties = BloonProperties.Lead;
-                weaponModel.projectile.GetDamageModel().immuneBloonProperties = BloonProperties.Purple;
             }
         }
 

@@ -68,7 +68,7 @@ namespace DarksTowers.Upgrades.LightMonkey.Middle
         public override int Path => MIDDLE;
         public override int Tier => 4;
         public override int Cost => 2195;
-        public override string Description => "The Light Blasts Are Being Shot so Fast it's Making it so Hot; Practically Fire!";
+        public override string Description => "The Light Blasts Are Being Shot so Fast it's Making it so Hot it's Practically Fire!";
         public override void ApplyUpgrade(TowerModel towerModel)
         {
             towerModel.ApplyDisplay<MonkeyofLight040Display>();
@@ -88,14 +88,14 @@ namespace DarksTowers.Upgrades.LightMonkey.Middle
         public override int Path => MIDDLE;
         public override int Tier => 5;
         public override int Cost => 25710;
-        public override string Description => "This May Sound Weird But The Monkey of Light Now Shoots Lava?";
+        public override string Description => "The Monkey of Light Shoots Light so Hot it's as Hot as Lava!";
         public override void ApplyUpgrade(TowerModel towerModel)
         {
             towerModel.ApplyDisplay<MonkeyofLight050Display>();
             var weaponModel = towerModel.GetWeapon();
             var proj = weaponModel.projectile;
             var damageModel = proj.GetDamageModel();
-            damageModel.damage += 65;
+            damageModel.damage += 18;
             proj.ApplyDisplay<LavaBlast>();
             foreach (var weapon in towerModel.GetWeapons())
             {
