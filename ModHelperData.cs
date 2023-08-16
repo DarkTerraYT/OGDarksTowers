@@ -4,7 +4,7 @@ public static class ModHelperData
 {
     public const string WorksOnVersion = "38";
     public const string Version = "2.0.0 BETA V2";
-    public const string Name = "DarksTowers";
+    public const string Name = "DarksTowers 2.0.0 BETA";
 
     public const string Description = "Adds custom towers to the game. Currently only has the plasma monkey.";
 
