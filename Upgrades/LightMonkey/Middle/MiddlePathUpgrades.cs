@@ -1,6 +1,7 @@
 ﻿using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
 using DarksTowers.Displays.MoneyofLight;
+using Il2Cpp;
 using Il2CppAssets.Scripts.Models.Towers;
 using static DarksTowers.Displays.Proj.ProjectileDisplays;
 
@@ -68,7 +69,7 @@ namespace DarksTowers.Upgrades.LightMonkey.Middle
         public override int Path => MIDDLE;
         public override int Tier => 4;
         public override int Cost => 2195;
-        public override string Description => "The Light Blasts Are Being Shot so Fast it's Making it so Hot it's Practically Fire!";
+        public override string Description => "The Light Blasts Are Being Shot so Fast it's Making it so Hot it's Practically Fire! Can Now Pop Lead Bloons.";
         public override void ApplyUpgrade(TowerModel towerModel)
         {
             towerModel.ApplyDisplay<MonkeyofLight040Display>();
@@ -79,6 +80,7 @@ namespace DarksTowers.Upgrades.LightMonkey.Middle
             proj.ApplyDisplay<FireBlast>();
             foreach (var weapon in towerModel.GetWeapons())
             {
+                weapon.projectile.GetDamageModel().immuneBloonProperties = BloonProperties.None;
                 weapon.rate *= 0.67f;
             }
         }
