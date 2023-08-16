@@ -68,8 +68,8 @@ namespace DarksTowers.Upgrades.LightMonkey.Middle
     {
         public override int Path => MIDDLE;
         public override int Tier => 4;
-        public override int Cost => 2195;
-        public override string Description => "Light so Hot it Leaves Nothing Behind.";
+        public override int Cost => 3452;
+        public override string Description => "The Light Blasts Are Being Shot so Fast it's Making it so Hot it's Practically Fire! Can Now Pop Lead Bloons.";
         public override void ApplyUpgrade(TowerModel towerModel)
         {
             towerModel.ApplyDisplay<MonkeyofLight040Display>();
@@ -89,8 +89,8 @@ namespace DarksTowers.Upgrades.LightMonkey.Middle
     {
         public override int Path => MIDDLE;
         public override int Tier => 5;
-        public override int Cost => 25710;
-        public override string Description => "The Monkey of Light Shoots Light so Hot it's as Hot as Lava!";
+        public override int Cost => 23650;
+        public override string Description => "The Light Got so Hot it Leaves Nothing Behind...";
         public override void ApplyUpgrade(TowerModel towerModel)
         {
             towerModel.ApplyDisplay<MonkeyofLight050Display>();

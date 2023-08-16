@@ -103,7 +103,7 @@ namespace DarksTowers.Upgrades.LightMonkey.Top
             var proj = attackModel.weapons[0].projectile;
             proj.ApplyDisplay<VoidBlast>();
             var dmgModel = proj.GetDamageModel();
-            dmgModel.damage += 12;
+            dmgModel.damage += 14;
         }
     }
     

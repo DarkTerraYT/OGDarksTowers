@@ -57,7 +57,7 @@ namespace DarksTowers.Upgrades.LightMonkey.Bottom
     {
         public override int Path => BOTTOM;
         public override int Tier => 4;
-        public override int Cost => 2350;
+        public override int Cost => 5670;
         public override string Description => "Stronger Light For Even More Damage.";
         public override void ApplyUpgrade(TowerModel towerModel)
         {
@@ -69,7 +69,7 @@ namespace DarksTowers.Upgrades.LightMonkey.Bottom
     {
         public override int Path => BOTTOM;
         public override int Tier => 5;
-        public override int Cost => 35545;
+        public override int Cost => 41300;
         public override string Description => "You Want Damage? We Got Damage!";
         public override void ApplyUpgrade(TowerModel towerModel)
         {

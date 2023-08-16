@@ -14,7 +14,7 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Top
 
         public override int Tier => 1;
 
-        public override int Cost => 2250;
+        public override int Cost => 1850;
 
         public override string Description => "Increases Pierce by 4 and Damage by 5";
 

@@ -36,7 +36,7 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Middle
 
         public override int Tier => 2;
 
-        public override int Cost => 4075;
+        public override int Cost => 2966;
 
         public override string Description => "Super Long Range Darts That do Extra Damage and Even More to Moabs, Ceramics and Fortified Bloons ";
 
@@ -130,7 +130,7 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Middle
 
         public override int Tier => 5;
 
-        public override int Cost => 82650;
+        public override int Cost => 54605;
 
         public override string Description => "The Plasma Monkey Now Does INSANE Damage!";
 

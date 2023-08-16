@@ -11,7 +11,7 @@ namespace DarksTowers.Upgrades.PlasmaMonkey.Bottom
 
         public override int Tier => 1;
 
-        public override int Cost => 1500;
+        public override int Cost => 1320;
 
         public override string Description => "Increases Attack Speed";
 
@@ -81,7 +81,7 @@ namespace DarksTowers.Upgrades.PlasmaMonkey.Bottom
         {
             public override int Path => BOTTOM;
             public override int Tier => 5;
-            public override int Cost => 51305;
+            public override int Cost => 43505;
             public override string Description => "Improves the Blasters to the State of the art Blasters Allowing Gloable Range, INSANE Peirce and Increasing Damage";
 
             public override void ApplyUpgrade(TowerModel towerModel)
