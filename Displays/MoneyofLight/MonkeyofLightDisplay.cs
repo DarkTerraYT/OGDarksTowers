@@ -31,4 +31,24 @@ namespace DarksTowers.Displays.MoneyofLight
     {
         protected override string TextureName => "MonkeyofLight030Display";
     }
+    internal class MonkeyofLight001Display : ModDisplay2D
+    {
+        protected override string TextureName => "MonkeyofLight001Display";
+    }
+    internal class MonkeyofLight002Display : ModDisplay2D
+    {
+        protected override string TextureName => "MonkeyofLight002Display";
+    }
+    internal class MonkeyofLight003Display : ModDisplay2D
+    {
+        protected override string TextureName => "MonkeyofLight003Display";
+    }
+    internal class MonkeyofLight004Display : ModDisplay2D
+    {
+        protected override string TextureName => "MonkeyofLight004Display";
+    }
+    internal class MonkeyofLight005Display : ModDisplay2D
+    {
+        protected override string TextureName => "MonkeyofLight005Display";
+    }
 }

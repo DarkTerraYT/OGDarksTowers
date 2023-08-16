@@ -24,7 +24,7 @@ namespace DarksTowers
 
         public override int MiddlePathUpgrades => 5;
 
-        public override int BottomPathUpgrades => 0;
+        public override int BottomPathUpgrades => 5;
 
         public override string Description => "This Monkey learned how to capture light and used it to their advantage. One day though, this monkey had an accident and turned into a monkey made purely of light.";
 
