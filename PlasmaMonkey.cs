@@ -23,7 +23,7 @@ namespace DarksTowers
 
         public override int TopPathUpgrades => 5;
 
-        public override int MiddlePathUpgrades => 4;
+        public override int MiddlePathUpgrades => 5;
 
         public override int BottomPathUpgrades => 5;
 
@@ -37,7 +37,6 @@ namespace DarksTowers
             towerModel.range += 15;
             var attackModle = towerModel.GetAttackModel();
             attackModle.range += 15;
-
             var projectile = attackModle.weapons[0].projectile;
             projectile.ApplyDisplay<PlasmaDart>();
             projectile.pierce += 7;
