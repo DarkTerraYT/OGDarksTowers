@@ -8,7 +8,7 @@ using static DarksTowers.Displays.Proj.ProjectileDisplays;
 
 namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Top
 {
-    internal class HotterPlasmaDarts : ModUpgrade<DarksTowers.PlasmaMonkey>
+    public class HotterPlasmaDarts : ModUpgrade<DarksTowers.PlasmaMonkey>
     {
         public override int Path => TOP;
 
@@ -30,7 +30,7 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Top
         }
     }
 
-    internal class FieryPlasmaDarts : ModUpgrade<DarksTowers.PlasmaMonkey>
+    public class FieryPlasmaDarts : ModUpgrade<DarksTowers.PlasmaMonkey>
     {
         public override int Path => TOP;
 
@@ -52,7 +52,7 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Top
         }
     }
 
-    internal class PlasmaBalls : ModUpgrade<DarksTowers.PlasmaMonkey>
+    public class PlasmaBalls : ModUpgrade<DarksTowers.PlasmaMonkey>
     {
         public override int Path => TOP;
 
@@ -73,7 +73,7 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Top
         }
     }
 
-    internal class FieryPlasmaBalls : ModUpgrade<DarksTowers.PlasmaMonkey>
+    public class FieryPlasmaBalls : ModUpgrade<DarksTowers.PlasmaMonkey>
     {
         public override int Path => TOP;
 
@@ -99,7 +99,7 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Top
         }
     }
 
-    internal class GodlyPlasmaBalls : ModUpgrade<DarksTowers.PlasmaMonkey>
+    public class GodlyPlasmaBalls : ModUpgrade<DarksTowers.PlasmaMonkey>
     {
         public override int Path => TOP;
 

@@ -3,7 +3,7 @@ using Il2CppAssets.Scripts.Unity.Display;
 
 namespace DarksTowers.Displays.Proj
 {
-    internal class ProjectileDisplays : ModDisplay
+    public class ProjectileDisplays : ModDisplay
     {
         public class PlasmaDart : ModDisplay
         {

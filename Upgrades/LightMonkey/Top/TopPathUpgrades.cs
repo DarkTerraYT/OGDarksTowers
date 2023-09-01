@@ -6,7 +6,7 @@ using static DarksTowers.Displays.Proj.ProjectileDisplays;
 
 namespace DarksTowers.Upgrades.LightMonkey.Top
 {
-    internal class FurtherBlasts : ModUpgrade<MonkeyofLight>
+    public class FurtherBlasts : ModUpgrade<MonkeyofLight>
     {
         public override int Path => TOP;
 
@@ -23,7 +23,7 @@ namespace DarksTowers.Upgrades.LightMonkey.Top
             attackModel.range += 10;
         }
     }
-    internal class EvenFurtherBlasts : ModUpgrade<MonkeyofLight>
+    public class EvenFurtherBlasts : ModUpgrade<MonkeyofLight>
     {
         public override int Path => TOP;
 
@@ -40,7 +40,7 @@ namespace DarksTowers.Upgrades.LightMonkey.Top
             attackModel.range += 20;
         }
     }
-    internal class TheDarkness : ModUpgrade<MonkeyofLight>
+    public class TheDarkness : ModUpgrade<MonkeyofLight>
     {
         public override int Path => TOP;
 
@@ -62,7 +62,7 @@ namespace DarksTowers.Upgrades.LightMonkey.Top
             dmgModel.damage += 3;
         }
     }
-    internal class MoreDarkness : ModUpgrade<MonkeyofLight>
+    public class MoreDarkness : ModUpgrade<MonkeyofLight>
     {
         public override int Path => TOP;
 
@@ -83,7 +83,7 @@ namespace DarksTowers.Upgrades.LightMonkey.Top
             dmgModel.damage += 6;
         }
     }
-    internal class MonkeyofDarkness : ModUpgrade<MonkeyofLight>
+    public class MonkeyofDarkness : ModUpgrade<MonkeyofLight>
     {
         public override int Path => TOP;
 

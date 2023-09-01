@@ -5,7 +5,7 @@ using Il2CppAssets.Scripts.Models.Towers;
 
 namespace DarksTowers.Upgrades.PlasmaMonkey.Bottom
 {
-    internal class FasterCreation : ModUpgrade<DarksTowers.PlasmaMonkey>
+    public class FasterCreation : ModUpgrade<DarksTowers.PlasmaMonkey>
     {
         public override int Path => BOTTOM;
 
@@ -23,7 +23,7 @@ namespace DarksTowers.Upgrades.PlasmaMonkey.Bottom
             }
         }
 
-        internal class EvenFasterCreation : ModUpgrade<DarksTowers.PlasmaMonkey>
+        public class EvenFasterCreation : ModUpgrade<DarksTowers.PlasmaMonkey>
         {
             public override int Path => BOTTOM;
 
@@ -42,7 +42,7 @@ namespace DarksTowers.Upgrades.PlasmaMonkey.Bottom
             }
         }
 
-        internal class HypersonicCreation : ModUpgrade<DarksTowers.PlasmaMonkey>
+        public class HypersonicCreation : ModUpgrade<DarksTowers.PlasmaMonkey>
         {
             public override int Path => BOTTOM;
             public override int Tier => 3;
@@ -59,7 +59,7 @@ namespace DarksTowers.Upgrades.PlasmaMonkey.Bottom
             }
         }
 
-        internal class PlasmaBlasters : ModUpgrade<DarksTowers.PlasmaMonkey>
+        public class PlasmaBlasters : ModUpgrade<DarksTowers.PlasmaMonkey>
         {
             public override int Path => BOTTOM;
             public override int Tier => 4;
@@ -77,7 +77,7 @@ namespace DarksTowers.Upgrades.PlasmaMonkey.Bottom
             }
         }
 
-        internal class SuperBlasters : ModUpgrade<DarksTowers.PlasmaMonkey>
+        public class SuperBlasters : ModUpgrade<DarksTowers.PlasmaMonkey>
         {
             public override int Path => BOTTOM;
             public override int Tier => 5;

@@ -7,7 +7,7 @@ using static DarksTowers.Displays.Proj.ProjectileDisplays;
 
 namespace DarksTowers.Upgrades.LightMonkey.Middle
 {
-    internal class FasterBlasts : ModUpgrade<MonkeyofLight>
+    public class FasterBlasts : ModUpgrade<MonkeyofLight>
     {
         public override int Path => MIDDLE;
 
@@ -24,7 +24,7 @@ namespace DarksTowers.Upgrades.LightMonkey.Middle
             }
         }
     }
-    internal class VeryFastBlasts : ModUpgrade<MonkeyofLight>
+    public class VeryFastBlasts : ModUpgrade<MonkeyofLight>
     {
         public override int Path => MIDDLE;
 
@@ -41,7 +41,7 @@ namespace DarksTowers.Upgrades.LightMonkey.Middle
             }
         }
     }
-    internal class HeatBlasts : ModUpgrade<MonkeyofLight>
+    public class HeatBlasts : ModUpgrade<MonkeyofLight>
     {
         public override int Path => MIDDLE;
 
@@ -64,7 +64,7 @@ namespace DarksTowers.Upgrades.LightMonkey.Middle
             }
         }
     }
-    internal class FireBlasts : ModUpgrade<MonkeyofLight>
+    public class FireBlasts : ModUpgrade<MonkeyofLight>
     {
         public override int Path => MIDDLE;
         public override int Tier => 4;
@@ -85,7 +85,7 @@ namespace DarksTowers.Upgrades.LightMonkey.Middle
             }
         }
     }
-    internal class LavaBlasts : ModUpgrade<MonkeyofLight>
+    public class LavaBlasts : ModUpgrade<MonkeyofLight>
     {
         public override int Path => MIDDLE;
         public override int Tier => 5;

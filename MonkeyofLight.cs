@@ -11,7 +11,7 @@ using Il2Cpp;
 
 namespace DarksTowers
 {
-    internal class MonkeyofLight : ModTower
+    public class MonkeyofLight : ModTower
     {
 
         public override TowerSet TowerSet => TowerSet.Magic;

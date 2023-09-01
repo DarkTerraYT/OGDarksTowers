@@ -7,7 +7,7 @@ using static DarksTowers.Displays.Proj.ProjectileDisplays;
 
 namespace DarksTowers.Upgrades.LightMonkey.Bottom
 {
-    internal class PiercingLight : ModUpgrade<MonkeyofLight>
+    public class PiercingLight : ModUpgrade<MonkeyofLight>
     {
         public override int Path => BOTTOM;
 
@@ -24,7 +24,7 @@ namespace DarksTowers.Upgrades.LightMonkey.Bottom
             towerModel.GetWeapon().projectile.ApplyDisplay<PiercingLightBlast>();
         }
     }
-    internal class BrightestLight : ModUpgrade<MonkeyofLight>
+    public class BrightestLight : ModUpgrade<MonkeyofLight>
     {
         public override int Path => BOTTOM;
 
@@ -40,7 +40,7 @@ namespace DarksTowers.Upgrades.LightMonkey.Bottom
             towerModel.GetWeapon().projectile.ApplyDisplay<BrightestLightBlast>();
         }
     }
-    internal class StrongLight : ModUpgrade<MonkeyofLight> 
+    public class StrongLight : ModUpgrade<MonkeyofLight> 
     {
         public override int Path => BOTTOM;
         public override int Tier => 3;
@@ -53,7 +53,7 @@ namespace DarksTowers.Upgrades.LightMonkey.Bottom
             towerModel.GetWeapon().rate *= 1.33f;
         }
     }
-    internal class StrongerLight : ModUpgrade<MonkeyofLight>
+    public class StrongerLight : ModUpgrade<MonkeyofLight>
     {
         public override int Path => BOTTOM;
         public override int Tier => 4;
@@ -65,7 +65,7 @@ namespace DarksTowers.Upgrades.LightMonkey.Bottom
             towerModel.GetWeapon().projectile.GetDamageModel().damage += 7;
         }
     }
-    internal class StrongestLight : ModUpgrade<MonkeyofLight>
+    public class StrongestLight : ModUpgrade<MonkeyofLight>
     {
         public override int Path => BOTTOM;
         public override int Tier => 5;

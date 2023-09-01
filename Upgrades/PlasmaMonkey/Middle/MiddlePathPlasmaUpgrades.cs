@@ -13,7 +13,7 @@ using static DarksTowers.Displays.Proj.ProjectileDisplays;
 
 namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Middle
 {
-    internal class StrongerThrowing : ModUpgrade<DarksTowers.PlasmaMonkey>
+    public class StrongerThrowing : ModUpgrade<DarksTowers.PlasmaMonkey>
     {
         public override int Path => MIDDLE;
 
@@ -30,7 +30,7 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Middle
         }
     }
 
-    internal class SuperStrongThrowing : ModUpgrade<DarksTowers.PlasmaMonkey>
+    public class SuperStrongThrowing : ModUpgrade<DarksTowers.PlasmaMonkey>
     {
         public override int Path => MIDDLE;
 
@@ -58,7 +58,7 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Middle
     }
 
 
-    internal class MoabMeltingDarts : ModUpgrade<DarksTowers.PlasmaMonkey>
+    public class MoabMeltingDarts : ModUpgrade<DarksTowers.PlasmaMonkey>
     {
         public override int Path => MIDDLE;
 
@@ -82,7 +82,7 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Middle
         }
     }
 
-    internal class MoabIncineration : ModUpgrade<DarksTowers.PlasmaMonkey>
+    public class MoabIncineration : ModUpgrade<DarksTowers.PlasmaMonkey>
     {
         public override int Path => MIDDLE;
 
@@ -124,7 +124,7 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Middle
         }
     }
 
-    internal class BloonDiscintergration : ModUpgrade<DarksTowers.PlasmaMonkey>
+    public class BloonDiscintergration : ModUpgrade<DarksTowers.PlasmaMonkey>
     {
         public override int Path => MIDDLE;
 

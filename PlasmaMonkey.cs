@@ -12,9 +12,8 @@ using DarksTowers.Displays.PlasmaMonkey;
 
 namespace DarksTowers
 {
-    internal class PlasmaMonkey : ModTower
+    public class PlasmaMonkey : ModTower
     {
-
         public override TowerSet TowerSet => TowerSet.Magic;
 
         public override string BaseTower => TowerType.DartMonkey;
@@ -51,5 +50,5 @@ namespace DarksTowers
 
         public override bool IsValidCrosspath(int[] tiers) =>
           ModHelper.HasMod("UltimateCrosspathing") ? true : base.IsValidCrosspath(tiers);
-    }
+    }      
 }
