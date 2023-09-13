@@ -21,7 +21,7 @@ namespace DarksTowers.Upgrades.CyberMonkey
         public override string Icon => "MegaMechaMonke-Icon";
         public override string Portrait => "MegaMechaMonke-Icon";
 
-        public override string Description => "More Cybernetic so more DAMAGE!"
+        public override string Description => "More Cybernetic so more DAMAGE!";
         public override void ApplyUpgrade(TowerModel towerModel)
         {
             // Attack 1: Mini-Gun
