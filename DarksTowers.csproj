@@ -11,4 +11,8 @@
     </PropertyGroup>
 
     <Import Project="..\btd6.targets" />
+
+    <ItemGroup>
+      <None Remove="CyberMonkey-Portrait.png" />
+    </ItemGroup>
 </Project>

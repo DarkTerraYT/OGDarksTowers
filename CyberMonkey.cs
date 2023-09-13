@@ -28,6 +28,8 @@ namespace DarksTowers
 
         public override int BottomPathUpgrades => 5;
 
+        public override string Icon => "CyberMonkey-Portrait";
+
         public override ParagonMode ParagonMode => ParagonMode.Base000;
 
         public static float _004Damage = 0;

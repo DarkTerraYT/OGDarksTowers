@@ -6,13 +6,15 @@ using static DarksTowers.Displays.Proj.ProjectileDisplays;
 
 namespace DarksTowers.Upgrades.CyberMonkey.Top
 {
-    internal class StongerBeam : ModUpgrade<DarksTowers.CyberMonkey>
+    internal class StrongerBeam : ModUpgrade<DarksTowers.CyberMonkey>
     {
         public override int Path => TOP;
 
         public override int Tier => 1;
 
         public override int Cost => 625;
+        public override string Description => "Does more damage";
+
 
         public override void ApplyUpgrade(TowerModel towerModel)
         {
@@ -27,6 +29,7 @@ namespace DarksTowers.Upgrades.CyberMonkey.Top
         public override int Tier => 2;
 
         public override int Cost => 815;
+        public override string Description => "Does even more damage";
 
         public override void ApplyUpgrade(TowerModel towerModel)
         {
@@ -41,6 +44,7 @@ namespace DarksTowers.Upgrades.CyberMonkey.Top
         public override int Tier => 3;
 
         public override int Cost => 1165;
+        public override string Description => "Once again does more damage";
 
         public override void ApplyUpgrade(TowerModel towerModel)
         {
@@ -56,8 +60,12 @@ namespace DarksTowers.Upgrades.CyberMonkey.Top
 
         public override int Cost => 5665;
 
+        public override string Description => "Does a LOT more damage";
+
+
         public override void ApplyUpgrade(TowerModel towerModel)
         {
+
             towerModel.GetWeapon(0).projectile.GetDamageModel().damage += 14;
             towerModel.GetWeapon().projectile.ApplyDisplay<DarkCyberLaser>();
             towerModel.GetWeapon().projectile.AddBehavior(new DamageModifierForTagModel("MoabDamageModifier", "Moab", 2, 25, false, false));
@@ -73,6 +81,8 @@ namespace DarksTowers.Upgrades.CyberMonkey.Top
         public override int Tier => 5;
 
         public override int Cost => 36485;
+
+        public override string Description => "Are you scared of rainbows? Well these bloons now are!";
 
         public override void ApplyUpgrade(TowerModel towerModel)
         {

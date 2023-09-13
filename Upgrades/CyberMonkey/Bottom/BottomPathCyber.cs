@@ -25,6 +25,8 @@ namespace DarksTowers.Upgrades.CyberMonkey.Bottom
 
         public override int Cost => 435;
 
+        public override string Description => "Increases range";
+
         public override void ApplyUpgrade(TowerModel towerModel)
         {
             towerModel.range += 20;
@@ -40,6 +42,8 @@ namespace DarksTowers.Upgrades.CyberMonkey.Bottom
 
         public override int Cost => 615;
 
+        public override string Description => "Can now see camo and slightly more range";
+
         public override void ApplyUpgrade(TowerModel towerModel)
         {
             towerModel.range += 10;
@@ -53,6 +57,8 @@ namespace DarksTowers.Upgrades.CyberMonkey.Bottom
         public override int Path => BOTTOM;
         public override int Tier => 3;
         public override int Cost => 1545;
+        public override string Description => "Pierces more bloons + can pop leads";
+
         public override void ApplyUpgrade(TowerModel towerModel)
         {
             towerModel.GetWeapon().projectile.pierce += 3;
@@ -66,6 +72,7 @@ namespace DarksTowers.Upgrades.CyberMonkey.Bottom
         public override int Tier => 4;
 
         public override int Cost => 6545;
+        public override string Description => "Lasers now explode, does more damage + pierce";
 
         public override void ApplyUpgrade(TowerModel towerModel)
         {
@@ -84,6 +91,7 @@ namespace DarksTowers.Upgrades.CyberMonkey.Bottom
         public override int Tier => 5;
 
         public override int Cost => 31545;
+        public override string Description => "I said a' boom chicka boom!";
 
         public override void ApplyUpgrade(TowerModel towerModel)
         {

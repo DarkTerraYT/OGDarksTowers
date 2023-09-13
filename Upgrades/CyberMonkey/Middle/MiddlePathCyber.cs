@@ -16,6 +16,8 @@ namespace DarksTowers.Upgrades.CyberMonkey.Middle
 
         public override int Cost => 480;
 
+        public override string Description => "More Pierce";
+
         public override void ApplyUpgrade(TowerModel towerModel)
         {
             towerModel.GetWeapon().projectile.pierce += 3;
@@ -29,6 +31,8 @@ namespace DarksTowers.Upgrades.CyberMonkey.Middle
         public override int Tier => 2;
 
         public override int Cost => 520;
+
+        public override string Description => "Even More Pierce";
 
         public override void ApplyUpgrade(TowerModel towerModel)
         {
@@ -44,6 +48,8 @@ namespace DarksTowers.Upgrades.CyberMonkey.Middle
         public override int Tier => 3;
 
         public override int Cost => 2545;
+
+        public override string Description => "Now Shoots Two Projectiles";
 
         public override void ApplyUpgrade(TowerModel towerModel)
         {
@@ -61,6 +67,8 @@ namespace DarksTowers.Upgrades.CyberMonkey.Middle
 
         public override int Cost => 6755;
 
+        public override string Description => "Shoots three lasers";
+
         public override void ApplyUpgrade(TowerModel towerModel)
         {
             towerModel.GetWeapon().projectile.pierce += 3;
@@ -77,6 +85,8 @@ namespace DarksTowers.Upgrades.CyberMonkey.Middle
         public override int Tier => 5;
 
         public override int Cost => 65780;
+
+        public override string Description => "I heard that doing more damage and shooting lots is good :)";
 
         public override void ApplyUpgrade(TowerModel towerModel)
         {
