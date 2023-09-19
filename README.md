@@ -5,6 +5,8 @@
 
 <h1 align="center">DarksTowers</h1>
 
+<h1 aling="left"><img alt="GitHub all releases" height="25" src="https://img.shields.io/github/downloads/DarkTerraYT/DarksTowers/total?label=Total%20Dowloads"></h1>
+
 Adds some custom towers to add to your stratergies. 
 
 Join the discord to give suggestions or ways I could balance the mod.
