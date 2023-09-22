@@ -30,6 +30,8 @@ namespace DarksTowers
 
         public override string Icon => "CyberMonkey-Portrait";
 
+        public override string Description => "A monkey made with cybernetic parts";
+
         public override ParagonMode ParagonMode => ParagonMode.Base000;
 
         public static float _004Damage = 0;
