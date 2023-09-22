@@ -31,7 +31,6 @@ namespace DarksTowers.Upgrades.CyberMonkey.Bottom
         {
             towerModel.range += 20;
             towerModel.GetAttackModel().range += 20;
-            towerModel.GetWeapon().rate *= 0.8f;
         }
     }
     internal class CamoSensors : ModUpgrade<DarksTowers.CyberMonkey>
@@ -48,7 +47,6 @@ namespace DarksTowers.Upgrades.CyberMonkey.Bottom
         {
             towerModel.range += 10;
             towerModel.GetAttackModel().range += 10;
-            towerModel.GetWeapon().rate *= 0.8f;
             towerModel.GetDescendants<FilterInvisibleModel>().ForEach(model => model.isActive = false);
         }
     }
@@ -57,12 +55,13 @@ namespace DarksTowers.Upgrades.CyberMonkey.Bottom
         public override int Path => BOTTOM;
         public override int Tier => 3;
         public override int Cost => 1545;
-        public override string Description => "Pierces more bloons + can pop leads";
+        public override string Description => "Pierces more bloons, slightly more damage + can pop leads";
 
         public override void ApplyUpgrade(TowerModel towerModel)
         {
             towerModel.GetWeapon().projectile.pierce += 3;
             towerModel.GetWeapon().projectile.GetDamageModel().immuneBloonProperties = Il2Cpp.BloonProperties.Purple;
+            towerModel.GetWeapon().projectile.GetDamageModel().damage += 1;
         }
     }
     internal class ExplodingBeams : ModUpgrade<DarksTowers.CyberMonkey>
@@ -84,7 +83,7 @@ namespace DarksTowers.Upgrades.CyberMonkey.Bottom
             towerModel.GetWeapon().projectile.ApplyDisplay<ExplodingCyberLaser>();
         }
     }
-    internal class RocketLauncer : ModUpgrade<DarksTowers.CyberMonkey>
+    internal class RocketLauncher : ModUpgrade<DarksTowers.CyberMonkey>
     {
         public override int Path => BOTTOM;
 
@@ -101,7 +100,7 @@ namespace DarksTowers.Upgrades.CyberMonkey.Bottom
             Projectile.AddBehavior(new DamageModel(null, towerModel.GetWeapon().projectile.GetDamageModel().damage, 9999999999999999999, false, false, true, Il2Cpp.BloonProperties.None, Il2Cpp.BloonProperties.None));
             var DamageModel = towerModel.GetWeapon(1).projectile.GetDamageModel();
             Projectile.ApplyDisplay<CyberBomb>();
-            DamageModel.damage += 25;
+            DamageModel.damage += 50;
             DamageModel.immuneBloonProperties = Il2Cpp.BloonProperties.None;
         }
     }

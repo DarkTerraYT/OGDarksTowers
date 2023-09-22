@@ -48,7 +48,7 @@ namespace DarksTowers.Upgrades.CyberMonkey.Top
 
         public override void ApplyUpgrade(TowerModel towerModel)
         {
-            towerModel.GetWeapon(0).projectile.GetDamageModel().damage += 4;
+            towerModel.GetWeapon(0).projectile.GetDamageModel().damage += 8;
             towerModel.GetWeapon().projectile.ApplyDisplay<LightCyberLaser>();
         }
     }
@@ -66,7 +66,7 @@ namespace DarksTowers.Upgrades.CyberMonkey.Top
         public override void ApplyUpgrade(TowerModel towerModel)
         {
 
-            towerModel.GetWeapon(0).projectile.GetDamageModel().damage += 14;
+            towerModel.GetWeapon(0).projectile.GetDamageModel().damage += 28;
             towerModel.GetWeapon().projectile.ApplyDisplay<DarkCyberLaser>();
             towerModel.GetWeapon().projectile.AddBehavior(new DamageModifierForTagModel("MoabDamageModifier", "Moab", 2, 25, false, false));
             towerModel.GetWeapon().rate *= 0.8f;
@@ -86,7 +86,7 @@ namespace DarksTowers.Upgrades.CyberMonkey.Top
 
         public override void ApplyUpgrade(TowerModel towerModel)
         {
-            towerModel.GetWeapon(0).projectile.GetDamageModel().damage += 40;
+            towerModel.GetWeapon(0).projectile.GetDamageModel().damage += 60;
             towerModel.GetWeapon().projectile.AddBehavior(new DamageModifierForTagModel("MoabDamageModifier", "Moab", 4, 200, false, false));
             towerModel.GetWeapon().projectile.ApplyDisplay<StrongCyberLaser>();
             towerModel.GetWeapon().rate *= 0.8f;

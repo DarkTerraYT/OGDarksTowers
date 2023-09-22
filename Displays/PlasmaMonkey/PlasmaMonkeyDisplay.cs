@@ -1,4 +1,6 @@
 ﻿using BTD_Mod_Helper.Api.Display;
+using Il2CppAssets.Scripts.Unity;
+using Il2CppAssets.Scripts.Unity.Display;
 
 namespace DarksTowers.Displays.PlasmaMonkey
 {
@@ -45,5 +47,19 @@ namespace DarksTowers.Displays.PlasmaMonkey
     public class PlasmaMonkey050Display : ModDisplay2D
     {
         protected override string TextureName => "PlasmaMonkey050Display";
+    }
+    public class PlasmaLordDisplay : ModTowerDisplay<DarksTowers.PlasmaMonkey>
+    {
+        public override string BaseDisplay => Game.instance.model.GetTowerFromId("SuperMonkey-300").display.GUID;
+
+        public override bool UseForTower(int[] tiers)
+        {
+            return IsParagon(tiers);
+        }
+
+        public override void ModifyDisplayNode(UnityDisplayNode node)
+        {
+            SetMeshTexture(node, Name);
+        }
     }
 }

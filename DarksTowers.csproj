@@ -14,5 +14,7 @@
 
     <ItemGroup>
       <None Remove="CyberMonkey-Portrait.png" />
+      <None Remove="Upgrades\LightMonkey\DiscordLightMode-Portrait.png" />
+      <None Remove="Upgrades\PlasmaMonkey\PlasmaLord-Portrait.png" />
     </ItemGroup>
 </Project>

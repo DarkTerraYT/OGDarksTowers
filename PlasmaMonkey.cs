@@ -30,6 +30,8 @@ namespace DarksTowers
 
         public override string Icon => "PlasmaMonkey-Portrait";
 
+        public override ParagonMode ParagonMode => ParagonMode.Base000;
+
         public override void ModifyBaseTowerModel(TowerModel towerModel)
         {
             towerModel.ApplyDisplay<PlasmaMonkeyDisplay>();

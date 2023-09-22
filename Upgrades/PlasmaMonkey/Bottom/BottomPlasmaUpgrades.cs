@@ -2,6 +2,7 @@
 using BTD_Mod_Helper.Extensions;
 using DarksTowers.Displays.PlasmaMonkey;
 using Il2CppAssets.Scripts.Models.Towers;
+using Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors;
 
 namespace DarksTowers.Upgrades.PlasmaMonkey.Bottom
 {
@@ -93,6 +94,12 @@ namespace DarksTowers.Upgrades.PlasmaMonkey.Bottom
                 var proj = towerModel.GetAttackModel().weapons[0].projectile;
                 proj.pierce += 50;
                 proj.GetDamageModel().damage += 15;
+
+                foreach (var weaponModel in towerModel.GetWeapons())
+                {
+                    weaponModel.projectile.GetBehavior<TravelStraitModel>().lifespan = 1;
+                    weaponModel.projectile.GetBehavior<TravelStraitModel>().Lifespan = 1;
+                }
             }
         }
     }

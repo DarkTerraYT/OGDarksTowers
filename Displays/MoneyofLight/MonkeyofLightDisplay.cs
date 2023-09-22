@@ -1,5 +1,7 @@
 ﻿
 using BTD_Mod_Helper.Api.Display;
+using Il2CppAssets.Scripts.Unity;
+using Il2CppAssets.Scripts.Unity.Display;
 
 namespace DarksTowers.Displays.MoneyofLight
 {
@@ -50,5 +52,19 @@ namespace DarksTowers.Displays.MoneyofLight
     public class MonkeyofLight005Display : ModDisplay2D
     {
         protected override string TextureName => "MonkeyofLight005Display";
+    }
+    public class DiscordLightModeDisplay : ModTowerDisplay<MonkeyofLight>
+    {
+        public override string BaseDisplay => Game.instance.model.GetTowerFromId("WizardMonkey-500").display.GUID;
+
+        public override bool UseForTower(int[] tiers)
+        {
+            return IsParagon(tiers);
+        }
+
+        public override void ModifyDisplayNode(UnityDisplayNode node)
+        {
+            SetMeshTexture(node, Name);
+        }
     }
 }

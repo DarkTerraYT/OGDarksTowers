@@ -56,7 +56,7 @@ namespace DarksTowers.Upgrades.CyberMonkey.Middle
             towerModel.GetWeapon().projectile.pierce += 3;
             towerModel.GetWeapon().emission = new RandomArcEmissionModel("RandomArchEmissionModel_", 2, 0, 0, 8, 1, null);
             towerModel.GetWeapon().rate *= 0.8f;
-            towerModel.GetWeapon().projectile.GetDamageModel().damage += 4;
+            towerModel.GetWeapon().projectile.GetDamageModel().damage += 8;
         }
     }
     internal class TripleBlasters : ModUpgrade<DarksTowers.CyberMonkey>
@@ -74,7 +74,7 @@ namespace DarksTowers.Upgrades.CyberMonkey.Middle
             towerModel.GetWeapon().projectile.pierce += 3;
             towerModel.GetWeapon().emission = new RandomArcEmissionModel("RandomArchEmissionModel_", 3, 0, 0, 12, 2, null);
             towerModel.GetWeapon().rate *= 0.8f; 
-            towerModel.GetWeapon().projectile.GetDamageModel().damage += 6;
+            towerModel.GetWeapon().projectile.GetDamageModel().damage += 10;
 
         }
     }
@@ -93,7 +93,7 @@ namespace DarksTowers.Upgrades.CyberMonkey.Middle
             towerModel.GetWeapon().projectile.pierce += 3;
             towerModel.GetWeapon().emission = new RandomArcEmissionModel("RandomArchEmissionModel_", 4, 0, 0, 16, 3, null);
             towerModel.GetWeapon().rate *= 0.8f; 
-            towerModel.GetWeapon().projectile.GetDamageModel().damage += 10;
+            towerModel.GetWeapon().projectile.GetDamageModel().damage += 25;
         }
     }
 

@@ -289,5 +289,32 @@ namespace DarksTowers.Displays.Proj
                 Set2DTexture(node, Name);
             }
         }
+        public class MegaLightBlast : ModDisplay
+        {
+            public override string BaseDisplay => Generic2dDisplay;
+
+            public override void ModifyDisplayNode(UnityDisplayNode node)
+            {
+                Set2DTexture(node, Name);
+            }
+        }
+        public class DeadlyPlasmaBall : ModDisplay
+        {
+            public override string BaseDisplay => Generic2dDisplay;
+
+            public override void ModifyDisplayNode(UnityDisplayNode node)
+            {
+                Set2DTexture(node, Name);
+            }
+        }
+        public class DeadlyPlasmaBeam : ModDisplay
+        {
+            public override string BaseDisplay => Generic2dDisplay;
+
+            public override void ModifyDisplayNode(UnityDisplayNode node)
+            {
+                Set2DTexture(node, Name);
+            }
+        }
     }
 }
