@@ -1,6 +1,9 @@
 ﻿using BTD_Mod_Helper.Api.Display;
+using BTD_Mod_Helper.Extensions;
+using Il2CppAssets.Scripts.Models.GenericBehaviors;
 using Il2CppAssets.Scripts.Unity;
 using Il2CppAssets.Scripts.Unity.Display;
+using UnityEngine;
 
 namespace DarksTowers.Displays.PlasmaMonkey
 {
@@ -50,7 +53,7 @@ namespace DarksTowers.Displays.PlasmaMonkey
     }
     public class PlasmaLordDisplay : ModTowerDisplay<DarksTowers.PlasmaMonkey>
     {
-        public override string BaseDisplay => Game.instance.model.GetTowerFromId("SuperMonkey-300").display.GUID;
+        public override string BaseDisplay => Game.instance.model.GetTowerFromId("SuperMonkey-500").GetAttackModel().GetBehavior<DisplayModel>().display.GUID;
 
         public override bool UseForTower(int[] tiers)
         {
