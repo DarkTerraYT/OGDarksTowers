@@ -97,7 +97,7 @@ namespace DarksTowers.Upgrades.CyberMonkey.Bottom
             towerModel.GetAttackModel().AddWeapon(Game.instance.model.GetTowerFromId("BombShooter-003").GetWeapon().Duplicate());
             var Projectile = towerModel.GetWeapon(1).projectile;
             Projectile.pierce = towerModel.GetWeapon(0).projectile.pierce + 10;
-            Projectile.AddBehavior(new DamageModel(null, towerModel.GetWeapon().projectile.GetDamageModel().damage, 9999999999999999999, false, false, true, Il2Cpp.BloonProperties.None, Il2Cpp.BloonProperties.None));
+            Projectile.AddBehavior(new DamageModel(null, towerModel.GetWeapon().projectile.GetDamageModel().damage, 9999999999999999999, false, false, true, Il2Cpp.BloonProperties.None, Il2Cpp.BloonProperties.None, false));
             var DamageModel = towerModel.GetWeapon(1).projectile.GetDamageModel();
             Projectile.ApplyDisplay<CyberBomb>();
             DamageModel.damage += 50;

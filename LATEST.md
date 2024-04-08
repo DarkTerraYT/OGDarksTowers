@@ -1,1 +1,1 @@
-Added Monkey of Light + 5th upgrade in plasma monkey's middle path!
+fixed for v40 (even though v40 was a while ago)

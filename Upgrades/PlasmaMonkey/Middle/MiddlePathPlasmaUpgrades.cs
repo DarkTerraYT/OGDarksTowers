@@ -45,7 +45,7 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Middle
             foreach (var proj in towerModel.GetWeapons().Select(weaponModel => weaponModel.projectile))
             {
                 proj.GetDamageModel().damage += 4;
-                proj.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab",
+                proj.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moabs",
                     1, 6, false, false));
                 proj.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModle_Ceramic", "Ceramic", 1, 4, false, false));
                 proj.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Fortified", "Fortified",
@@ -76,7 +76,7 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Middle
 
             foreach (var sproj in towerModel.GetWeapons().Select(weaponModel => weaponModel.projectile))
             {
-                sproj.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab",
+                sproj.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moabs",
                     1, 15, false, false));
             }
         }
@@ -102,7 +102,7 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Middle
 
             foreach (var sPorj in towerModel.GetWeapons().Select(weaponModel => weaponModel.projectile))
             {
-                sPorj.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", 1, 5, false, false));
+                sPorj.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moabs", 1, 5, false, false));
             }
             var abilityModel = new AbilityModel("moab-incineration-ability", "Moab Incineration", "Increases Moab Greatly Effectively Incinerating Them.", 1, 0, GetSpriteReference(Icon),
                 52f, null, false, false, null, 0, 0, 999999, true, false);
@@ -120,7 +120,7 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Middle
             abilityDamageModel.damage = dmgModel.damage;
             abilityDamageModel.immuneBloonProperties = dmgModel.immuneBloonProperties;
             projectileModel.pierce = proj.pierce;
-            projectileModel.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", 1, 40, false, false));
+            projectileModel.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moabs", 1, 40, false, false));
         }
     }
 
@@ -142,7 +142,7 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Middle
             proj.GetDamageModel().damage += 30;
             foreach (var sProj in towerModel.GetWeapons().Select(weaponModel => weaponModel.projectile))
             {
-                sProj.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moab", 1, 32, false, false));
+                sProj.AddBehavior(new DamageModifierForTagModel("DamageModifierForTagModel_Moab", "Moabs", 1, 32, false, false));
             }
         }
     }
