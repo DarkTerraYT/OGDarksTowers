@@ -3,6 +3,7 @@ using BTD_Mod_Helper.Extensions;
 using DarksTowers.Displays.Proj;
 using Il2CppAssets.Scripts.Models.Towers;
 using Il2CppAssets.Scripts.Models.Towers.Behaviors.Emissions;
+using Il2CppAssets.Scripts.Models.Towers.Filters;
 using Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors;
 using System;
 using System.Collections.Generic;
@@ -34,6 +35,8 @@ namespace DarksTowers.Upgrades.LightMonkey
             DamageModel.damage = 125;
             ProjectileModel.AddBehavior(new DamageModifierForTagModel("MOABDamageModifier_", "Moab", 1.75f, 0, false, false));
             ProjectileModel.ApplyDisplay<ProjectileDisplays.MegaLightBlast>();
+
+            towerModel.GetDescendants<FilterInvisibleModel>().ForEach(mod => mod.isActive = false);
         }
     }
 }
