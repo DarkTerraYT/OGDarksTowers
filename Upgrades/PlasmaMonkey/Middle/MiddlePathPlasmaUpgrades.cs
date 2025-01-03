@@ -107,7 +107,7 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Middle
             var abilityModel = new AbilityModel("moab-incineration-ability", "Moab Incineration", "Increases Moab Greatly Effectively Incinerating Them.", 1, 0, GetSpriteReference(Icon),
                 52f, null, false, false, null, 0, 0, 999999, true, false);
             towerModel.AddBehavior(abilityModel);
-            var abilityAttackModel = new ActivateAttackModel("moab-incineration-avtivate-attack-model", 1f, true, new Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppReferenceArray<AttackModel>(1), false, true, false, false, false);
+            var abilityAttackModel = new ActivateAttackModel("moab-incineration-avtivate-attack-model", 1f, true, new Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppReferenceArray<AttackModel>(1), false, true, false, false, false, true);
             abilityModel.AddBehavior(abilityAttackModel);
 
             var attackModleAbility = abilityAttackModel.attacks[0] = Game.instance.model.GetTower(TowerType.DartMonkey).GetAttackModel().Duplicate();

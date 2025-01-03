@@ -53,7 +53,7 @@ namespace DarksTowers.Displays.PlasmaMonkey
     }
     public class PlasmaLordDisplay : ModTowerDisplay<DarksTowers.PlasmaMonkey>
     {
-        public override string BaseDisplay => Game.instance.model.GetTowerFromId("SuperMonkey-500").GetAttackModel().GetBehavior<DisplayModel>().display.GUID;
+        public override string BaseDisplay => Game.instance.model.GetTowerFromId("SuperMonkey-500").GetAttackModel().GetBehavior<DisplayModel>().display.AssetGUID;
 
         public override bool UseForTower(int[] tiers)
         {

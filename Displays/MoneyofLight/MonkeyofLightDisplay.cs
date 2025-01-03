@@ -55,7 +55,7 @@ namespace DarksTowers.Displays.MoneyofLight
     }
     public class DiscordLightModeDisplay : ModTowerDisplay<MonkeyofLight>
     {
-        public override string BaseDisplay => Game.instance.model.GetTowerFromId("WizardMonkey-500").display.GUID;
+        public override string BaseDisplay => Game.instance.model.GetTowerFromId("WizardMonkey-500").display.AssetGUID;
 
         public override bool UseForTower(int[] tiers)
         {
