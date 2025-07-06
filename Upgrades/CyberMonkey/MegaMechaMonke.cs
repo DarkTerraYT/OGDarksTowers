@@ -46,8 +46,10 @@ namespace DarksTowers.Upgrades.CyberMonkey
             Projectile__.pierce = 3;
             Projectile__.ApplyDisplay<MegaCyberLaserBullet>();
             // Attack 3: Blaster
-            towerModel.AddBehavior(new AttackModel(null, null, 85, null, null, 0, 0, 0, false, false, 0, false, 0));
-            towerModel.GetAttackModel(2).AddWeapon(WeaponModel_.Duplicate());
+            towerModel.AddBehavior(Game.instance.model.GetTower("DartMonkey").GetAttackModel().Duplicate());
+            var atkModel = towerModel.GetAttackModel(2);
+            atkModel.range = 85;
+            atkModel.SetWeapon(WeaponModel_.Duplicate());
             var WeaponModel___ = towerModel.GetWeapon(2);
             var Projectile___ = WeaponModel__.projectile;
             WeaponModel___.rate = 0.1f;
@@ -56,7 +58,7 @@ namespace DarksTowers.Upgrades.CyberMonkey
             Projectile___.pierce = 25;
             Projectile___.GetDamageModel().immuneBloonProperties = Il2Cpp.BloonProperties.None;
             WeaponModel___.emission = new ArcEmissionModel("ArcEmissionModel", 3, 0, 15, null, false, false);
-            // Attack 4: RPG (Rocket Propelled Grenade)
+            // Attack 4: RPG
             towerModel.AddBehavior(Game.instance.model.GetTowerFromId("BombShooter-004").GetAttackModel().Duplicate());
             towerModel.GetAttackModel().range = 85;
             var WeaponModel____ = towerModel.GetWeapon(3);
