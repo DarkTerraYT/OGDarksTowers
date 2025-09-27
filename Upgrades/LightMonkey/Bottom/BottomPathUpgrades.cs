@@ -1,11 +1,11 @@
 ﻿using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
-using DarksTowers.Displays.MoneyofLight;
-using DarksTowers.Displays.Proj;
+using OGDarksTowers.Displays.MoneyofLight;
+using OGDarksTowers.Displays.Proj;
 using Il2CppAssets.Scripts.Models.Towers;
-using static DarksTowers.Displays.Proj.ProjectileDisplays;
+using static OGDarksTowers.Displays.Proj.ProjectileDisplays;
 
-namespace DarksTowers.Upgrades.LightMonkey.Bottom
+namespace OGDarksTowers.Upgrades.LightMonkey.Bottom
 {
     public class PiercingLight : ModUpgrade<MonkeyofLight>
     {

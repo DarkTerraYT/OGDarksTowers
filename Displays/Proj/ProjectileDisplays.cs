@@ -1,7 +1,7 @@
 ﻿using BTD_Mod_Helper.Api.Display;
 using Il2CppAssets.Scripts.Unity.Display;
 
-namespace DarksTowers.Displays.Proj
+namespace OGDarksTowers.Displays.Proj
 {
     public class ProjectileDisplays : ModDisplay
     {

@@ -1,12 +1,12 @@
 ﻿using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
-using DarksTowers.Displays.PlasmaMonkey;
+using OGDarksTowers.Displays.PlasmaMonkey;
 using Il2CppAssets.Scripts.Models.Towers;
 using Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors;
 
-namespace DarksTowers.Upgrades.PlasmaMonkey.Bottom
+namespace OGDarksTowers.Upgrades.PlasmaMonkey.Bottom
 {
-    public class FasterCreation : ModUpgrade<DarksTowers.PlasmaMonkey>
+    public class FasterCreation : ModUpgrade<OGDarksTowers.PlasmaMonkey>
     {
         public override int Path => BOTTOM;
 
@@ -24,7 +24,7 @@ namespace DarksTowers.Upgrades.PlasmaMonkey.Bottom
             }
         }
 
-        public class EvenFasterCreation : ModUpgrade<DarksTowers.PlasmaMonkey>
+        public class EvenFasterCreation : ModUpgrade<OGDarksTowers.PlasmaMonkey>
         {
             public override int Path => BOTTOM;
 
@@ -43,7 +43,7 @@ namespace DarksTowers.Upgrades.PlasmaMonkey.Bottom
             }
         }
 
-        public class HypersonicCreation : ModUpgrade<DarksTowers.PlasmaMonkey>
+        public class HypersonicCreation : ModUpgrade<OGDarksTowers.PlasmaMonkey>
         {
             public override int Path => BOTTOM;
             public override int Tier => 3;
@@ -60,7 +60,7 @@ namespace DarksTowers.Upgrades.PlasmaMonkey.Bottom
             }
         }
 
-        public class PlasmaBlasters : ModUpgrade<DarksTowers.PlasmaMonkey>
+        public class PlasmaBlasters : ModUpgrade<OGDarksTowers.PlasmaMonkey>
         {
             public override int Path => BOTTOM;
             public override int Tier => 4;
@@ -78,7 +78,7 @@ namespace DarksTowers.Upgrades.PlasmaMonkey.Bottom
             }
         }
 
-        public class SuperBlasters : ModUpgrade<DarksTowers.PlasmaMonkey>
+        public class SuperBlasters : ModUpgrade<OGDarksTowers.PlasmaMonkey>
         {
             public override int Path => BOTTOM;
             public override int Tier => 5;

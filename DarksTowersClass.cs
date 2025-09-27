@@ -1,11 +1,11 @@
-using MelonLoader;
 using BTD_Mod_Helper;
-using DarksTowers;
+using OGDarksTowers;
+using MelonLoader;
 
 [assembly: MelonInfo(typeof(DarksTowersClass), ModHelperData.Name, ModHelperData.Version, ModHelperData.Author)]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 
-namespace DarksTowers;
+namespace OGDarksTowers;
 
 public class DarksTowersClass : BloonsTD6Mod
 {

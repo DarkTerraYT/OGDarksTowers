@@ -1,6 +1,6 @@
 ﻿using BTD_Mod_Helper.Api.Display;
 
-namespace DarksTowers.Displays.CyberMonkey
+namespace OGDarksTowers.Displays.CyberMonkey
 {
     internal class CyberMonkeyDisplay : ModDisplay2D
     {

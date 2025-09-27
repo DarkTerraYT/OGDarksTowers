@@ -13,11 +13,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static DarksTowers.Displays.Proj.ProjectileDisplays;
+using static OGDarksTowers.Displays.Proj.ProjectileDisplays;
 
-namespace DarksTowers.Upgrades.CyberMonkey.Bottom
+namespace OGDarksTowers.Upgrades.CyberMonkey.Bottom
 {
-    internal class BetterSensors : ModUpgrade<DarksTowers.CyberMonkey>
+    internal class BetterSensors : ModUpgrade<OGDarksTowers.CyberMonkey>
     {
         public override int Path => BOTTOM;
 
@@ -33,7 +33,7 @@ namespace DarksTowers.Upgrades.CyberMonkey.Bottom
             towerModel.GetAttackModel().range += 20;
         }
     }
-    internal class CamoSensors : ModUpgrade<DarksTowers.CyberMonkey>
+    internal class CamoSensors : ModUpgrade<OGDarksTowers.CyberMonkey>
     {
         public override int Path => BOTTOM;
 
@@ -50,7 +50,7 @@ namespace DarksTowers.Upgrades.CyberMonkey.Bottom
             towerModel.GetDescendants<FilterInvisibleModel>().ForEach(model => model.isActive = false);
         }
     }
-    internal class SharpBeams : ModUpgrade<DarksTowers.CyberMonkey>
+    internal class SharpBeams : ModUpgrade<OGDarksTowers.CyberMonkey>
     {
         public override int Path => BOTTOM;
         public override int Tier => 3;
@@ -64,7 +64,7 @@ namespace DarksTowers.Upgrades.CyberMonkey.Bottom
             towerModel.GetWeapon().projectile.GetDamageModel().damage += 1;
         }
     }
-    internal class ExplodingBeams : ModUpgrade<DarksTowers.CyberMonkey>
+    internal class ExplodingBeams : ModUpgrade<OGDarksTowers.CyberMonkey>
     {
         public override int Path => BOTTOM;
 
@@ -83,7 +83,7 @@ namespace DarksTowers.Upgrades.CyberMonkey.Bottom
             towerModel.GetWeapon().projectile.ApplyDisplay<ExplodingCyberLaser>();
         }
     }
-    internal class RocketLauncher : ModUpgrade<DarksTowers.CyberMonkey>
+    internal class RocketLauncher : ModUpgrade<OGDarksTowers.CyberMonkey>
     {
         public override int Path => BOTTOM;
 

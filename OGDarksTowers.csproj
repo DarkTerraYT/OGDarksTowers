@@ -4,7 +4,7 @@
         <RootNamespace>OGDarksTowers</RootNamespace>
         <Configurations>Debug;Release</Configurations>
         <Nullable>enable</Nullable>
-        <AssemblyName>DarksTowers</AssemblyName>
+        <AssemblyName>OGDarksTowers</AssemblyName>
         <LangVersion>latest</LangVersion>
         <Optimize>False</Optimize>
         <DebugType>embedded</DebugType>
@@ -13,10 +13,7 @@
     <Import Project="..\btd6.targets" />
 
     <ItemGroup>
-      <None Remove="CyberMonkey-Portrait.png" />
       <None Remove="Displays\Proj\OrangeDiffuse.png" />
       <None Remove="orange.bundle" />
-      <None Remove="Upgrades\LightMonkey\DiscordLightMode-Portrait.png" />
-      <None Remove="Upgrades\PlasmaMonkey\PlasmaLord-Portrait.png" />
     </ItemGroup>
 </Project>

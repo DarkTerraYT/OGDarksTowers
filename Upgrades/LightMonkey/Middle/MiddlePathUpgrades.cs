@@ -1,11 +1,11 @@
 ﻿using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
-using DarksTowers.Displays.MoneyofLight;
+using OGDarksTowers.Displays.MoneyofLight;
 using Il2Cpp;
 using Il2CppAssets.Scripts.Models.Towers;
-using static DarksTowers.Displays.Proj.ProjectileDisplays;
+using static OGDarksTowers.Displays.Proj.ProjectileDisplays;
 
-namespace DarksTowers.Upgrades.LightMonkey.Middle
+namespace OGDarksTowers.Upgrades.LightMonkey.Middle
 {
     public class FasterBlasts : ModUpgrade<MonkeyofLight>
     {

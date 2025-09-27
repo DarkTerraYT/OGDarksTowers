@@ -2,7 +2,7 @@
 using BTD_Mod_Helper.Api.Enums;
 using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
-using DarksTowers.Displays.CyberMonkey;
+using OGDarksTowers.Displays.CyberMonkey;
 using Il2CppAssets.Scripts;
 using Il2CppAssets.Scripts.Models.Bloons.Behaviors;
 using Il2CppAssets.Scripts.Models.Towers;
@@ -10,9 +10,9 @@ using Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors;
 using Il2CppAssets.Scripts.Models.TowerSets;
 using Il2CppAssets.Scripts.Unity;
 using System.Runtime.Serialization;
-using static DarksTowers.Displays.Proj.ProjectileDisplays;
+using static OGDarksTowers.Displays.Proj.ProjectileDisplays;
 
-namespace DarksTowers
+namespace OGDarksTowers
 {
     internal class CyberMonkey : ModTower
     {

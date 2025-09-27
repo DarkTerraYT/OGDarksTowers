@@ -1,16 +1,16 @@
 ﻿using MelonLoader;
 using BTD_Mod_Helper;
-using DarksTowers;
+using OGDarksTowers;
 using BTD_Mod_Helper.Api.Towers;
 using Il2CppAssets.Scripts.Models.TowerSets;
 using Il2CppAssets.Scripts.Models.Towers;
 using BTD_Mod_Helper.Extensions;
-using static DarksTowers.Displays.Proj.ProjectileDisplays;
+using static OGDarksTowers.Displays.Proj.ProjectileDisplays;
 using Il2CppAssets.Scripts.Models;
 using Il2Cpp;
-using DarksTowers.Displays.PlasmaMonkey;
+using OGDarksTowers.Displays.PlasmaMonkey;
 
-namespace DarksTowers
+namespace OGDarksTowers
 {
     public class PlasmaMonkey : ModTower
     {

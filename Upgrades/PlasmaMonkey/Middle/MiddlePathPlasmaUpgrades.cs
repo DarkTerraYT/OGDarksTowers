@@ -1,6 +1,6 @@
 ﻿using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
-using DarksTowers.Displays.PlasmaMonkey;
+using OGDarksTowers.Displays.PlasmaMonkey;
 using Il2CppAssets.Scripts.Models.Towers;
 using Il2CppAssets.Scripts.Models.Towers.Behaviors.Abilities;
 using Il2CppAssets.Scripts.Models.Towers.Behaviors.Abilities.Behaviors;
@@ -9,11 +9,11 @@ using Il2CppAssets.Scripts.Models.Towers.Projectiles;
 using Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors;
 using Il2CppAssets.Scripts.Unity;
 using System.Linq;
-using static DarksTowers.Displays.Proj.ProjectileDisplays;
+using static OGDarksTowers.Displays.Proj.ProjectileDisplays;
 
 namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Middle
 {
-    public class StrongerThrowing : ModUpgrade<DarksTowers.PlasmaMonkey>
+    public class StrongerThrowing : ModUpgrade<OGDarksTowers.PlasmaMonkey>
     {
         public override int Path => MIDDLE;
 
@@ -30,7 +30,7 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Middle
         }
     }
 
-    public class SuperStrongThrowing : ModUpgrade<DarksTowers.PlasmaMonkey>
+    public class SuperStrongThrowing : ModUpgrade<OGDarksTowers.PlasmaMonkey>
     {
         public override int Path => MIDDLE;
 
@@ -58,7 +58,7 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Middle
     }
 
 
-    public class MoabMeltingDarts : ModUpgrade<DarksTowers.PlasmaMonkey>
+    public class MoabMeltingDarts : ModUpgrade<OGDarksTowers.PlasmaMonkey>
     {
         public override int Path => MIDDLE;
 
@@ -82,7 +82,7 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Middle
         }
     }
 
-    public class MoabIncineration : ModUpgrade<DarksTowers.PlasmaMonkey>
+    public class MoabIncineration : ModUpgrade<OGDarksTowers.PlasmaMonkey>
     {
         public override int Path => MIDDLE;
 
@@ -124,7 +124,7 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Middle
         }
     }
 
-    public class BloonDiscintergration : ModUpgrade<DarksTowers.PlasmaMonkey>
+    public class BloonDiscintergration : ModUpgrade<OGDarksTowers.PlasmaMonkey>
     {
         public override int Path => MIDDLE;
 

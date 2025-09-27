@@ -2,11 +2,11 @@
 using BTD_Mod_Helper.Extensions;
 using Il2CppAssets.Scripts.Models.Towers;
 using Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors;
-using static DarksTowers.Displays.Proj.ProjectileDisplays;
+using static OGDarksTowers.Displays.Proj.ProjectileDisplays;
 
-namespace DarksTowers.Upgrades.CyberMonkey.Top
+namespace OGDarksTowers.Upgrades.CyberMonkey.Top
 {
-    internal class StrongerBeam : ModUpgrade<DarksTowers.CyberMonkey>
+    internal class StrongerBeam : ModUpgrade<OGDarksTowers.CyberMonkey>
     {
         public override int Path => TOP;
 
@@ -22,7 +22,7 @@ namespace DarksTowers.Upgrades.CyberMonkey.Top
             towerModel.GetWeapon().projectile.ApplyDisplay<StrongCyberLaser>();
         }
     }
-    internal class PlasmaBeam : ModUpgrade<DarksTowers.CyberMonkey>
+    internal class PlasmaBeam : ModUpgrade<OGDarksTowers.CyberMonkey>
     {
         public override int Path => TOP;
 
@@ -37,7 +37,7 @@ namespace DarksTowers.Upgrades.CyberMonkey.Top
             towerModel.GetWeapon().projectile.ApplyDisplay<PlasmaCyberLaser>();
         }
     }
-    internal class LightBeam : ModUpgrade<DarksTowers.CyberMonkey>
+    internal class LightBeam : ModUpgrade<OGDarksTowers.CyberMonkey>
     {
         public override int Path => TOP;
 
@@ -52,7 +52,7 @@ namespace DarksTowers.Upgrades.CyberMonkey.Top
             towerModel.GetWeapon().projectile.ApplyDisplay<LightCyberLaser>();
         }
     }
-    internal class DarkBeam : ModUpgrade<DarksTowers.CyberMonkey>
+    internal class DarkBeam : ModUpgrade<OGDarksTowers.CyberMonkey>
     {
         public override int Path => TOP;
 
@@ -74,7 +74,7 @@ namespace DarksTowers.Upgrades.CyberMonkey.Top
 
         }
     }
-    internal class RainbowBeam : ModUpgrade<DarksTowers.CyberMonkey>
+    internal class RainbowBeam : ModUpgrade<OGDarksTowers.CyberMonkey>
     {
         public override int Path => TOP;
 

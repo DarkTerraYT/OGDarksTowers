@@ -4,11 +4,11 @@ using Il2CppAssets.Scripts.Models.Towers;
 using Il2CppAssets.Scripts.Models.Towers.Behaviors.Emissions;
 using Il2CppAssets.Scripts.Models.Towers.Projectiles;
 using Il2CppAssets.Scripts.Models.Towers.Weapons;
-using static DarksTowers.Displays.Proj.ProjectileDisplays;
+using static OGDarksTowers.Displays.Proj.ProjectileDisplays;
 
-namespace DarksTowers.Upgrades.CyberMonkey.Middle
+namespace OGDarksTowers.Upgrades.CyberMonkey.Middle
 {
-    internal class BetterBeam : ModUpgrade<DarksTowers.CyberMonkey>
+    internal class BetterBeam : ModUpgrade<OGDarksTowers.CyberMonkey>
     {
         public override int Path => MIDDLE;
 
@@ -24,7 +24,7 @@ namespace DarksTowers.Upgrades.CyberMonkey.Middle
             towerModel.GetWeapon().projectile.ApplyDisplay<BetterCyberLaser>();
         }
     }
-    internal class EvenBetterBeam : ModUpgrade<DarksTowers.CyberMonkey>
+    internal class EvenBetterBeam : ModUpgrade<OGDarksTowers.CyberMonkey>
     {
         public override int Path => MIDDLE;
 
@@ -41,7 +41,7 @@ namespace DarksTowers.Upgrades.CyberMonkey.Middle
 
         }
     }
-    internal class DualBlasters : ModUpgrade<DarksTowers.CyberMonkey>
+    internal class DualBlasters : ModUpgrade<OGDarksTowers.CyberMonkey>
     {
         public override int Path => MIDDLE;
 
@@ -59,7 +59,7 @@ namespace DarksTowers.Upgrades.CyberMonkey.Middle
             towerModel.GetWeapon().projectile.GetDamageModel().damage += 8;
         }
     }
-    internal class TripleBlasters : ModUpgrade<DarksTowers.CyberMonkey>
+    internal class TripleBlasters : ModUpgrade<OGDarksTowers.CyberMonkey>
     {
         public override int Path => MIDDLE;
 
@@ -78,7 +78,7 @@ namespace DarksTowers.Upgrades.CyberMonkey.Middle
 
         }
     }
-    internal class QuadBlasters : ModUpgrade<DarksTowers.CyberMonkey>
+    internal class QuadBlasters : ModUpgrade<OGDarksTowers.CyberMonkey>
     {
         public override int Path => MIDDLE;
 

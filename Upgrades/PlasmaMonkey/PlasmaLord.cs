@@ -1,6 +1,6 @@
 ﻿using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
-using DarksTowers.Displays.Proj;
+using OGDarksTowers.Displays.Proj;
 using Il2CppAssets.Scripts.Models.Towers;
 using Il2CppAssets.Scripts.Models.Towers.Behaviors.Emissions;
 using Il2CppAssets.Scripts.Models.Towers.Filters;
@@ -8,9 +8,9 @@ using Il2CppAssets.Scripts.Models.Towers.Projectiles;
 using Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors;
 using Il2CppAssets.Scripts.Unity;
 
-namespace DarksTowers.Upgrades.PlasmaMonkey
+namespace OGDarksTowers.Upgrades.PlasmaMonkey
 {
-    internal class PlasmaLord : ModParagonUpgrade<DarksTowers.PlasmaMonkey>
+    internal class PlasmaLord : ModParagonUpgrade<OGDarksTowers.PlasmaMonkey>
     {
         public override int Cost => 999999;
 

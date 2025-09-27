@@ -3,7 +3,7 @@ using BTD_Mod_Helper.Api.Display;
 using Il2CppAssets.Scripts.Unity;
 using Il2CppAssets.Scripts.Unity.Display;
 
-namespace DarksTowers.Displays.MoneyofLight
+namespace OGDarksTowers.Displays.MoneyofLight
 {
     public class MonkeyofLightDisplay : ModDisplay2D
     {

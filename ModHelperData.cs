@@ -1,4 +1,4 @@
-namespace DarksTowers;
+namespace OGDarksTowers;
 
 public static class ModHelperData
 {

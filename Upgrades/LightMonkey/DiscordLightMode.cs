@@ -1,6 +1,6 @@
 ﻿using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
-using DarksTowers.Displays.Proj;
+using OGDarksTowers.Displays.Proj;
 using Il2CppAssets.Scripts.Models.Towers;
 using Il2CppAssets.Scripts.Models.Towers.Behaviors.Emissions;
 using Il2CppAssets.Scripts.Models.Towers.Filters;
@@ -11,7 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DarksTowers.Upgrades.LightMonkey
+namespace OGDarksTowers.Upgrades.LightMonkey
 {
     internal class DiscordLightMode : ModParagonUpgrade<MonkeyofLight>
     {

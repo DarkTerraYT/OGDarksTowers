@@ -1,15 +1,13 @@
 ﻿using MelonLoader;
 using BTD_Mod_Helper;
-using DarksTowers;
 using BTD_Mod_Helper.Api.Towers;
 using Il2CppAssets.Scripts.Models.TowerSets;
 using Il2CppAssets.Scripts.Models.Towers;
 using BTD_Mod_Helper.Extensions;
-using static DarksTowers.Displays.Proj.ProjectileDisplays;
-using Il2CppAssets.Scripts.Models;
+using static OGDarksTowers.Displays.Proj.ProjectileDisplays;
 using Il2Cpp;
 
-namespace DarksTowers
+namespace OGDarksTowers
 {
     public class MonkeyofLight : ModTower
     {

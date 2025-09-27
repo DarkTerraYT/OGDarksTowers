@@ -1,14 +1,14 @@
 ﻿using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
-using DarksTowers.Displays.PlasmaMonkey;
+using OGDarksTowers.Displays.PlasmaMonkey;
 using Il2CppAssets.Scripts.Models.Towers;
 using Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors;
 using System.Linq;
-using static DarksTowers.Displays.Proj.ProjectileDisplays;
+using static OGDarksTowers.Displays.Proj.ProjectileDisplays;
 
 namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Top
 {
-    public class HotterPlasmaDarts : ModUpgrade<DarksTowers.PlasmaMonkey>
+    public class HotterPlasmaDarts : ModUpgrade<OGDarksTowers.PlasmaMonkey>
     {
         public override int Path => TOP;
 
@@ -30,7 +30,7 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Top
         }
     }
 
-    public class FieryPlasmaDarts : ModUpgrade<DarksTowers.PlasmaMonkey>
+    public class FieryPlasmaDarts : ModUpgrade<OGDarksTowers.PlasmaMonkey>
     {
         public override int Path => TOP;
 
@@ -52,7 +52,7 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Top
         }
     }
 
-    public class PlasmaBalls : ModUpgrade<DarksTowers.PlasmaMonkey>
+    public class PlasmaBalls : ModUpgrade<OGDarksTowers.PlasmaMonkey>
     {
         public override int Path => TOP;
 
@@ -73,7 +73,7 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Top
         }
     }
 
-    public class FieryPlasmaBalls : ModUpgrade<DarksTowers.PlasmaMonkey>
+    public class FieryPlasmaBalls : ModUpgrade<OGDarksTowers.PlasmaMonkey>
     {
         public override int Path => TOP;
 
@@ -99,7 +99,7 @@ namespace CustomTowerMaybe.Upgrades.PlasmaMonkey.Top
         }
     }
 
-    public class GodlyPlasmaBalls : ModUpgrade<DarksTowers.PlasmaMonkey>
+    public class GodlyPlasmaBalls : ModUpgrade<OGDarksTowers.PlasmaMonkey>
     {
         public override int Path => TOP;
 

@@ -5,7 +5,7 @@ using Il2CppAssets.Scripts.Unity;
 using Il2CppAssets.Scripts.Unity.Display;
 using UnityEngine;
 
-namespace DarksTowers.Displays.PlasmaMonkey
+namespace OGDarksTowers.Displays.PlasmaMonkey
 {
     public class PlasmaMonkeyDisplay : ModDisplay2D
     {
@@ -51,7 +51,7 @@ namespace DarksTowers.Displays.PlasmaMonkey
     {
         protected override string TextureName => "PlasmaMonkey050Display";
     }
-    public class PlasmaLordDisplay : ModTowerDisplay<DarksTowers.PlasmaMonkey>
+    public class PlasmaLordDisplay : ModTowerDisplay<OGDarksTowers.PlasmaMonkey>
     {
         public override string BaseDisplay => Game.instance.model.GetTowerFromId("SuperMonkey-500").GetAttackModel().GetBehavior<DisplayModel>().display.AssetGUID;
 

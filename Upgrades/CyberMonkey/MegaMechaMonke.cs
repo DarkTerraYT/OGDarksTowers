@@ -10,11 +10,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static DarksTowers.Displays.Proj.ProjectileDisplays;
+using static OGDarksTowers.Displays.Proj.ProjectileDisplays;
 
-namespace DarksTowers.Upgrades.CyberMonkey
+namespace OGDarksTowers.Upgrades.CyberMonkey
 {
-    internal class MegaMechaMonke : ModParagonUpgrade<DarksTowers.CyberMonkey>
+    internal class MegaMechaMonke : ModParagonUpgrade<OGDarksTowers.CyberMonkey>
     {
         public override int Cost => 415650;
 
